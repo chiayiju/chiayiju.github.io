@@ -1,5 +1,5 @@
 ---
-title: Simplifying 4D 4D $mathcalN=3$ harmonic superspace
+title: Simplifying 4D $\mathcal{N} = 3$ harmonic superspace
 authors:
 - Dharmesh Jain
 - Chia-Yi Ju
