@@ -1,14 +1,14 @@
 ---
 # Leave the homepage title empty to use the site title
-title:
-date: 2022-10-24
+title: Formal Theory Research Group
+date: 2024-03-13
 type: landing
 
 sections:
   - block: hero
     content:
       title: |
-        Wowchemy
+        Formal Theory 1
         Research Group
       image:
         filename: welcome.jpg
