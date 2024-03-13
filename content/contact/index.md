@@ -8,12 +8,12 @@ sections:
   - block: contact
     content:
       title: Contact
-      text: |-
+      # text: |-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
-      email: chiayiju@mail.nsysu.edu.tw
+      email: chiayiju_at_mail.nsysu.edu.tw
       phone: +886-7-525-2000 ext. 3747
       address:
-        street: 70, Lien-hai Road
+        street: 70, Lien-Hai Road
         city: Kaohsiung
         # region: CA
         postcode: '804201'
@@ -22,7 +22,7 @@ sections:
       coordinates:
         latitude: '22.6264'
         longitude: '120.2671'
-      directions: Physics Building, Room PH 5006 on Floor 5
+      directions: Room PH5006, Physics Building
       office_hours:
         - 'Monday 14:00 to 16:00'
         - 'Wednesday 10:00 to 12:00'
@@ -34,16 +34,16 @@ sections:
       #    link: 'https://discourse.gohugo.io'
     
       # Automatically link email and phone or display as text?
-      autolink: true
+      autolink: false
     
       # Email form provider
-      form:
+      # form:
         provider: netlify
         formspree:
           id:
         netlify:
           # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
+          captcha: true
     design:
       columns: '1'
 
