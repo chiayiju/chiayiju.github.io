@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
-title: Formal Theory Research Group
-date: 2022-10-24
+title:
+date: 2024-03-13
 type: landing
 
 sections:
