@@ -9,7 +9,7 @@ authors:
 date: '2022-04-01'
 publishDate: '2024-03-13T10:51:25.956844Z'
 publication_types:
-- article-journal
+- article
 abstract: Studies have shown that the Hilbert spaces of non-Hermitian systems require
   nontrivial metrics. Here, we demonstrate how evolution dimensions, in addition to
   time, can emerge naturally from a geometric formalism. Specifically, in this formalism,
