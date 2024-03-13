@@ -1,6 +1,5 @@
 ---
-title: Emergent parallel transport and curvature in Hermitian and non-Hermitian quantum
-  mechanics
+title: Emergent parallel transport and curvature in Hermitian and non-Hermitian quantum mechanics
 authors:
 - Chia-Yi Ju
 - Adam Miranowicz
