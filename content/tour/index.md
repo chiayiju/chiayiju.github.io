@@ -13,7 +13,7 @@ sections:
         align: center
         background:
           image:
-            filename: Chalkboard.jpeg
+            filename: Chalkboard.jpg
             filters:
               brightness: 0.7
           position: right
