@@ -23,7 +23,7 @@ sections:
         align: left
         background:
           image:
-            filename: contact.jpg
+            filename: Desk.jpg
             filters:
               brightness: 0.7
           position: center
