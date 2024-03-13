@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Test la
+title: Chia-Yi Ju
 
 # Full Name (for SEO)
 first_name: Chia-Yi
