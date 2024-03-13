@@ -19,14 +19,14 @@ organizations:
 
 # Short bio (displayed in user profile at end of posts)
 bio:
-  Chia-Yi Ju's background is in formal theory. He is mainly interested in the geometric approaches in various fields in theoretical physics, including quantum information, string theories, and supersymmetric theories. Recently, he turned most of his attention to the foundation of non-Hermitian quantum mechanics.
+  Chia-Yi Ju's background is in formal theory. He is primarily interested in geometric approaches in various fields of theoretical physics, including quantum information, string theories, and supersymmetric theories.
   
-  Rather than standard approaches to quantum mechanics, he tackles quantum mechanics using differential geometry (or fiber bundle) theories, which could naturally extend the conventional quantum mechanics to the non-Hermitian regimes. Dr. Ju also maintains association with the quantum information community.
+  Recently, he has turned most of his attention to the foundations of non-Hermitian quantum physics. Rather than standard approaches to quantum mechanics, he tackles quantum theories using differential geometry (or fiber bundle) theories, which could naturally extend conventional quantum mechanics to non-Hermitian regimes.
   
-  He collaborates with many quantum information groups on various theoretical topics, mostly on the restrictions of quantum information from quantum mechanical laws.
+  He collaborates with many quantum information groups on various theoretical topics, mainly on the restrictions of quantum information from quantum mechanical laws. He also maintains an association with the quantum information community.
 
 interests:
-  - Quantum foundationss/Non-Hermitian Quantum Physics
+  - Quantum foundations/Non-Hermitian Quantum Physics
   - String Theories
   - Supersymmetric Theories
   - Quantum Information
@@ -50,27 +50,27 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
+    link: 'mailto:chiayiju@mail.nsysu.edu.tw'
+  # - icon: twitter
+  #  icon_pack: fab
+  #  link: https://twitter.com/GeorgeCushen
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: [https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ](https://scholar.google.com/citations?user=d5x-eh4AAAAJ)
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/chiayiju
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+  - icon: cv
+    icon_pack: ai
+    link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'chiayiju@mail.nsysu.edu.tw'
 
 # Highlight the author in author lists? (true/false)
-highlight_name: false
+highlight_name: true
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
