@@ -37,7 +37,7 @@ sections:
       autolink: false
     
       # Email form provider
-      # form:
+      form:
         provider: netlify
         formspree:
           id:
