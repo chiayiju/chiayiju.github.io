@@ -16,6 +16,7 @@ role: Assistant Professor
 organizations:
   - name: Department of Physics, National Sun Yat-Sen University
     url: 'https://phys.nsysu.edu.tw/'
+  - name: test
 
 # Short bio (displayed in user profile at end of posts)
 bio:
@@ -33,15 +34,12 @@ interests:
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: PhD in Phyics
+      institution: Stony Brook University
+      year: 2016
+    - course: BSc in Physics
+      institution: National Chung Hsing University
+      year: 2007
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
