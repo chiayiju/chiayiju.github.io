@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: 'Formal Theory Research Group'
+title: 
 date: 2024-03-13
 type: landing
 
