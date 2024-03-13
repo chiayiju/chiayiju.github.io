@@ -49,12 +49,15 @@ social:
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=d5x-eh4AAAAJ
+  - icon: inspire
+    icon_pack: ai
+    link: https://inspirehep.net/authors/1274516
   - icon: github
     icon_pack: fab
     link: https://github.com/chiayiju
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/chia-yi-ju-143a1ab3/
+    link: https://www.linkedin.com/in/chia-yi-ju-143a1ab3
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
   - icon: cv
