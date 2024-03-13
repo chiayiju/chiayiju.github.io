@@ -15,7 +15,7 @@ sections:
       text: |
         <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        The **Formal Theory Research Group** at National Sun Yat-Sen University aims to tackle various theoretical physics problems with mathematical and geometrical tools.
   
   - block: collection
     content:
