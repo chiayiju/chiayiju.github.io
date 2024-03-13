@@ -65,7 +65,7 @@ slides: example
 ---
 
 ---
-title: "An example journal article"
+title: "An example journal article 1"
 authors:
 - admin
 - Robert Ford
