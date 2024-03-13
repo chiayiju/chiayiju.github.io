@@ -5,6 +5,9 @@ authors:
 - Chia-Yi Ju
 - Guang-Yin Chen
 - Wen-Min Huang
+author_notes:
+- "Equal contribution"
+- "Equal contribution"
 date: '2021-01-01'
 publishDate: '2024-03-13T10:51:25.938486Z'
 publication_types:
