@@ -14,11 +14,15 @@ role: Assistant Professor
 
 # Organizations/Affiliations
 organizations:
-  - name: Physics Department @ National Sun Yat-Sen University
+  - name: Department of Physics, National Sun Yat-Sen University
     url: 'https://phys.nsysu.edu.tw/'
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Chia-Yi Ju's background is in formal theory. He is mainly interested in the geometric approaches in various fields in theoretical physics, including quantum information, string theories, and supersymmetric theories.
+	
+	Recently, he turned most of his attention to the foundation of non-Hermitian quantum mechanics. Rather than standard approaches to quantum mechanics, he tackles quantum mechanics using differential geometry (or fiber bundle) theories, which could naturally extend the conventional quantum mechanics to the non-Hermitian regimes.
+	
+	Dr. Ju also maintains association with the quantum information community. He collaborates with many quantum information groups on various theoretical topics, mostly on the restrictions of quantum information from quantum mechanical laws.
 
 interests:
   - Artificial Intelligence
