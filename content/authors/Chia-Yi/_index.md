@@ -16,7 +16,8 @@ role: Assistant Professor
 organizations:
   - name: Department of Physics, National Sun Yat-Sen University
     url: 'https://phys.nsysu.edu.tw/'
-  - name: test
+  - name: Center for Theoretical and Computational Physics, National Sun Yat-Sen University
+    url: 'https://ctcp-phys.nsysu.edu.tw/'
 
 # Short bio (displayed in user profile at end of posts)
 bio:
