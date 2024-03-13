@@ -4,7 +4,7 @@ authors:
 - Dharmesh Jain
 - Chia-Yi Ju
 - Warren Siegel
-authors_note:
+author_note:
 -
 - "Corresponding Author"
 date: '2020-09-01'
