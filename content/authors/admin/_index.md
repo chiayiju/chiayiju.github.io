@@ -75,7 +75,7 @@ highlight_name: true
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Researchers
+  - Principal Investigators
 ---
 
 Chia-Yi Ju's background is in formal theory. He is primarily interested in geometric approaches in various fields of theoretical physics, including quantum information, string theories, and supersymmetric theories.
