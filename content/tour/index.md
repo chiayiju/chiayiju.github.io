@@ -8,8 +8,8 @@ sections:
   - block: slider
     content:
       slides:
-      - title: Welcome to the world of theoretical physics
-        content: Come take a look at our research methodology...
+      - title: 'Welcome to the world of theoretical physics'
+        content: 'Come take a look at our research methodology...'
         align: center
         background:
           image:
