@@ -56,7 +56,7 @@ social:
   #  link: https://twitter.com/GeorgeCushen
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ](https://scholar.google.com/citations?user=d5x-eh4AAAAJ
+    link: https://scholar.google.com/citations?user=d5x-eh4AAAAJ
   - icon: github
     icon_pack: fab
     link: https://github.com/chiayiju
@@ -75,7 +75,7 @@ highlight_name: true
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Principal Investigators
+  - Principal Investigator
 ---
 
 Chia-Yi Ju's background is in formal theory. He is primarily interested in geometric approaches in various fields of theoretical physics, including quantum information, string theories, and supersymmetric theories.
