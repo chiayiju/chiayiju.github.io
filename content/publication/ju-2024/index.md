@@ -16,11 +16,4 @@ doi: 10.22331/q-2024-03-13-1277
 links:
 - name: URL
   url: https://doi.org/10.22331/q-2024-03-13-1277
-  
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
-  focal_point: ""
-  preview_only: false
 ---
