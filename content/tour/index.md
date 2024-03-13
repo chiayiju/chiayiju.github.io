@@ -8,8 +8,8 @@ sections:
   - block: slider
     content:
       slides:
-      - title: 'Welcome to the world of theoretical physics'
-        content: 'Come take a look at our research methodology...'
+      - title: 👋 Welcome to the group
+        content: Take a look at what we're working on...
         align: center
         background:
           image:
@@ -33,7 +33,7 @@ sections:
         align: right
         background:
           image:
-            filename: MobiusStrip.jpg
+            filename: welcome.jpg
             filters:
               brightness: 0.5
           position: center
