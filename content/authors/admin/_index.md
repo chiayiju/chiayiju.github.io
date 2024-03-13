@@ -78,6 +78,8 @@ user_groups:
   - Researchers
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Chia-Yi Ju's background is in formal theory. He is primarily interested in geometric approaches in various fields of theoretical physics, including quantum information, string theories, and supersymmetric theories.
+  
+  Recently, he has turned most of his attention to the foundations of non-Hermitian quantum physics. Rather than standard approaches to quantum mechanics, he tackles quantum theories using differential geometry (or fiber bundle) theories, which could naturally extend conventional quantum mechanics to non-Hermitian regimes.
+  
+  He collaborates with many quantum information groups on various theoretical topics, mainly on the restrictions of quantum information from quantum mechanical laws. He also maintains an association with the quantum information community.
