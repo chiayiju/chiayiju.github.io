@@ -29,7 +29,7 @@ sections:
           position: center
           color: '#555'
       - title: 'Communicate with Nature'
-        content: 'with the language of mathematics and logics'
+        content: 'using the language of mathematics and logic'
         align: right
         background:
           image:
