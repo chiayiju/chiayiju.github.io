@@ -23,7 +23,7 @@ sections:
         align: left
         background:
           image:
-            filename: desk.jpg
+            filename: nsysufrontgate.jpg
             filters:
               brightness: 0.7
           position: center
@@ -33,7 +33,7 @@ sections:
         align: right
         background:
           image:
-            filename: mobiusstrip.jpg
+            filename: officeview.jpg
             filters:
               brightness: 0.5
           position: center
