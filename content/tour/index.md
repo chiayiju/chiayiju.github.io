@@ -18,6 +18,11 @@ sections:
               brightness: 0.7
           position: right
           color: '#666'
+        link:
+          icon: newspaper
+          icon_pack: fas
+          text: Join us
+          url: ../publication/
       - title: 'Perform your experiment anywhere'
         content: 'Our research is translational invariant'
         align: left
@@ -50,5 +55,5 @@ sections:
       # Automatically transition through slides?
       loop: true
       # Duration of transition between slides (in ms)
-      interval: 2000
+      interval: 5000
 ---
