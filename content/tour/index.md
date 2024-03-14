@@ -8,8 +8,8 @@ sections:
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the group
-        content: Take a look at what we're working on...
+      - title: 'Welcome to the Formal Theory Research Group'
+        content: 'We study physics through paper and pen experiments'
         align: center
         background:
           image:
@@ -18,8 +18,8 @@ sections:
               brightness: 0.7
           position: right
           color: '#666'
-      - title: Lunch & Learn ☕️
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
+      - title: 'Perform your experiment anywhere'
+        content: 'Our research is translational invariant'
         align: left
         background:
           image:
@@ -28,8 +28,8 @@ sections:
               brightness: 0.7
           position: center
           color: '#555'
-      - title: 'Explore the Quantum World'
-        content: 'with Mathematics'
+      - title: 'Communicate with Nature'
+        content: 'with the language of mathematics and logics'
         align: right
         background:
           image:
