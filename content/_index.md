@@ -11,7 +11,7 @@ sections:
         Formal Theory
         Research Group
       image:
-        filename: Desk.jpg
+        filename: desk.jpg
       text: |
         <br>
         
