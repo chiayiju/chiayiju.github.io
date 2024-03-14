@@ -18,7 +18,7 @@ sections:
               brightness: 0.7
           position: right
           color: '#666'
-        link:
+         link:
           icon: graduation-cap
           icon_pack: fas
           text: Join us
