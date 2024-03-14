@@ -19,10 +19,10 @@ sections:
           position: right
           color: '#666'
         link:
-          icon: newspaper
+          icon: users
           icon_pack: fas
-          text: Join us
-          url: ../publication/
+          text: Check us out
+          url: ../people/
       - title: 'Perform your experiment anywhere'
         content: 'Our research is translational invariant'
         align: left
@@ -33,6 +33,11 @@ sections:
               brightness: 0.7
           position: center
           color: '#555'
+        link:
+          icon: comments
+          icon_pack: fas
+          text: Join us
+          url: ../contact/
       - title: 'Communicate with Nature'
         content: 'using the language of mathematics and logic'
         align: right
@@ -44,10 +49,10 @@ sections:
           position: center
           color: '#333'
         link:
-          icon: graduation-cap
+          icon: book
           icon_pack: fas
           text: Join us
-          url: ../contact/
+          url: ../publication/
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: ''
