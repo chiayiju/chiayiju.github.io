@@ -5,7 +5,7 @@ image:
   focal_point: 'top'
 ---
 
-After a period of long waiting. Our research group website has finally launched.
+After a long period of waiting, our research group's website has finally launched.
 
 <!--more-->
 
