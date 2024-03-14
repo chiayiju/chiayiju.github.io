@@ -14,6 +14,8 @@ sections:
         background:
           image:
             filename: chalkboard.jpg
+            caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+            focal_point: Right
             filters:
               brightness: 0.7
           position: right
@@ -23,9 +25,6 @@ sections:
           icon_pack: fas
           text: Check us out
           url: ../people/
-        image:
-          caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
-          focal_point: Right
       - title: 'Perform your experiment anywhere'
         content: 'Our research is translational invariant'
         align: left
