@@ -59,7 +59,7 @@ sections:
         image: 
           filename: officeview.jpg
           filters:
-            brightness: 0.5
+            brightness: 1
           parallax: false
           position: center
           size: cover
