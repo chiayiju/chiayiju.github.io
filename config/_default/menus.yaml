@@ -13,11 +13,11 @@ main:
   - name: People
     url: people
     weight: 30
-  - name: Events1
-    url: event1
-    weight: 40
   - name: Publications
     url: publication
+    weight: 40
+  - name: Miscellaneous
+    url: miscellaneous
     weight: 50
   - name: Contact
     url: contact
