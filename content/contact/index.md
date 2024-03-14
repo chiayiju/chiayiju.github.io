@@ -50,7 +50,7 @@ sections:
 
   - block: markdown
     content:
-      title: 'test'
+      title: ''
       subtitle: ''
       text:
     design:
