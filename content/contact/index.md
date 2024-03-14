@@ -59,12 +59,12 @@ sections:
         image: 
           filename: officeview.jpg
           filters:
-            brightness: 1
+            brightness: 0.5
           parallax: false
           position: center
           size: cover
           text_color_light: true
       spacing:
-        padding: ['60px', '0', '60px', '0']
+        padding: ['20px', '0', '20px', '0']
       css_class: fullscreen
 ---
