@@ -9,7 +9,7 @@ sections:
     content:
       slides:
       - title: 👋 Welcome to the group
-        content: Take a look at what we're working on...
+        content: 'Take a look at what we're working on...'
         align: center
         background:
           image:
@@ -29,7 +29,7 @@ sections:
           position: center
           color: '#555'
       - title: Explore the Quantum World
-        content: with Mathematics
+        content: 'with Mathematics'
         align: right
         background:
           image:
