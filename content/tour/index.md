@@ -38,7 +38,7 @@ sections:
               brightness: 0.5
           position: center
           color: '#333'
-         link:
+        link:
           icon: graduation-cap
           icon_pack: fas
           text: Join us
