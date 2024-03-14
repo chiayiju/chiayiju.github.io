@@ -29,7 +29,7 @@ sections:
           position: center
           color: '#555'
       - title: Explore the Quantum World
-        content: 'with Mathematics'
+        content: with Mathematics
         align: right
         background:
           image:
