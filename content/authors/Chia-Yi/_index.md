@@ -46,6 +46,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:chiayiju@mail.nsysu.edu.tw'
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0001-7038-3375
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=d5x-eh4AAAAJ
