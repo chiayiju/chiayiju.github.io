@@ -36,7 +36,7 @@ sections:
         link:
           icon: comments
           icon_pack: fas
-          text: Join us
+          text: Interested?
           url: ../contact/
       - title: 'Communicate with Nature'
         content: 'using the language of mathematics and logic'
@@ -51,7 +51,7 @@ sections:
         link:
           icon: book
           icon_pack: fas
-          text: Join us
+          text: See what we do
           url: ../publication/
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
