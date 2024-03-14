@@ -18,6 +18,11 @@ sections:
               brightness: 0.7
           position: right
           color: '#666'
+        link:
+          icon: graduation-cap
+          icon_pack: fas
+          text: 'Publications'
+          url: ../publications/
       - title: Lunch & Learn ☕️
         content: 'Share your knowledge with the group and explore exciting new topics together!'
         align: left
