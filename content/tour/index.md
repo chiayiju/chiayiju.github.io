@@ -15,7 +15,7 @@ sections:
           image:
             filename: chalkboard.jpg
             filters:
-              brightness: 0.7
+              brightness: 0.3
           position: right
           color: '#666'
         link:
