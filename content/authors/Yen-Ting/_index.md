@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Yen-Ting Lin
+title: Yen-Ting Lin 林彥霆
 
 # Full Name (for SEO)
 first_name: Yen-Ting
