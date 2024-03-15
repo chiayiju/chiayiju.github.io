@@ -13,4 +13,8 @@ publication_types:
 - article-journal
 publication: '*Phys. Rev. D*'
 doi: 10.1103/physrevd.102.066007
+
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2007.13777
 ---
