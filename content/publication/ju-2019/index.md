@@ -11,4 +11,8 @@ publication_types:
 - article-journal
 publication: '*Phys. Rev. A*'
 doi: 10.1103/physreva.100.062118
+
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/1906.08071
 ---
