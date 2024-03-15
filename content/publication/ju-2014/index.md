@@ -9,4 +9,8 @@ publication_types:
 - article-journal
 publication: '*Phys. Rev. D*'
 doi: 10.1103/physrevd.90.125004
+
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/1302.2515
 ---
