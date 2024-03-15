@@ -14,4 +14,8 @@ publication_types:
 - article-journal
 publication: '*Phys. Rev. Research*'
 doi: 10.1103/physrevresearch.4.023070
+
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2107.11910
 ---
