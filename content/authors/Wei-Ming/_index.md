@@ -58,4 +58,6 @@ highlight_name: true
 user_groups:
   - Postdoctoral Researcher
 ---
-#![Covered with papers](busywithpapers.jpg)
+![Covered with papers](busywithpapers.jpg)
+
+<img src="busywithpapers.jpg>
