@@ -26,7 +26,7 @@ bio:
 interests:
   - Quantum foundations/Non-Hermitian Quantum Physics
   - String Theories
-  - Supersymmetric Theories
+  - Supersymmetric Field Theories
   - Quantum Information
 
 education:
