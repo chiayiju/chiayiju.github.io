@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Chia-Yi Ju
+title: Chia-Yi Ju 朱家誼
 
 # Full Name (for SEO)
 first_name: Chia-Yi
