@@ -18,4 +18,5 @@ links:
   url: https://doi.org/10.22331/q-2024-03-13-1277
 - name: arXiv
   url: https://arxiv.org/abs/2204.05657
+  url_pdf: https://arxiv.org/pdf/2204.05657v3.pdf
 ---
