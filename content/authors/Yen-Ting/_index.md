@@ -19,12 +19,6 @@ organizations:
   - name: Center for Theoretical and Computational Physics, National Sun Yat-Sen University
     url: 'https://ctcp-phys.nsysu.edu.tw/'
 
-# Short bio (displayed in user profile at end of posts)
-bio:
-  Yen-Ting is interested in the geometrical approach to quantum physics.
-  
-  He is currently working with Dr. Ju on the perturbation method for non-Hermitian quantum systems.
-
 interests:
   - Quantum theories
   - Theoretical physics
@@ -59,6 +53,7 @@ user_groups:
 ---
 
 Yen-Ting is interested in the geometrical approach to quantum physics.
+
 He is currently working with Dr. Ju on the perturbation method for non-Hermitian quantum systems.
 
 ![Reading with a magnifying glass](magnifyingglass.jpg)
