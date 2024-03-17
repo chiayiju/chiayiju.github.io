@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Wei-Ming Chen 陳韋名
+title: Wei-Ming Chen
 
 # Full Name (for SEO)
 first_name: Wei-Ming
