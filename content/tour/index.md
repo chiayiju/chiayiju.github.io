@@ -9,7 +9,7 @@ sections:
     content:
       slides:
       - title: 'Welcome to the Formal Theory Research Group'
-        content: 'We study physics laws and natural phenomena through paper-and-pencil experiments'
+        content: 'We explore the mechanisms of physics and natural phenomena through paper-and-pencil experiments'
         align: center
         background:
           image:
