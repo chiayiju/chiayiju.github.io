@@ -22,6 +22,7 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio:
   Yen-Ting is interested in the geometrical approach to quantum physics.
+  
   He is currently working with Dr. Ju on the perturbation method for non-Hermitian quantum systems.
 
 interests:
