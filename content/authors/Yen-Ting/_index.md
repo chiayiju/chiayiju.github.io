@@ -21,10 +21,12 @@ organizations:
 
 # Short bio (displayed in user profile at end of posts)
 bio:
-  Yet to come
+  Yen-Ting is interested in the geometrical approach to quantum physics.
+  He is currently working with Dr. Ju on the perturbation method for non-Hermitian quantum systems.
 
 interests:
-  - Yet to come
+  - Quantum theories
+  - Theoretical physics
 education:
   courses:
     - course: BSc in Physics
@@ -38,24 +40,13 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:xxx@mail.nsysu.edu.tw'
-  # - icon: twitter
-  #  icon_pack: fab
-  #  link: https://twitter.com/GeorgeCushen
-  # - icon: google-scholar
-  # icon_pack: ai
-  # link: https://scholar.google.com/citations?user=d5x-eh4AAAAJ
-  # - icon: github
-  # icon_pack: fab
-  # link: https://github.com/chiayiju
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-  # - icon: cv
-  # icon_pack: ai
-  # link: files/CYJu.pdf
+    link: 'mailto:m122030004@student.nsysu.edu.tw'
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/yt-lin753951/
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'xxx@mail.nsysu.edu.tw'
+email: 'm122030004@student.nsysu.edu.tw'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
@@ -66,4 +57,5 @@ user_groups:
   - Master's Student
 ---
 
-Yet to come...
+Yen-Ting is interested in the geometrical approach to quantum physics.
+He is currently working with Dr. Ju on the perturbation method for non-Hermitian quantum systems.
