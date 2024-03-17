@@ -59,3 +59,5 @@ user_groups:
 
 Yen-Ting is interested in the geometrical approach to quantum physics.
 He is currently working with Dr. Ju on the perturbation method for non-Hermitian quantum systems.
+
+![Reading with a magnifying glass](magnifyingglass.jpg)
