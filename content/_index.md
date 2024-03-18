@@ -15,7 +15,7 @@ sections:
       text: |
         <br>
         
-        The **Formal Theory Research Group** at National Sun Yat-Sen University aims to tackle various theoretical physics problems with mathematical and geometrical tools.
+        The **Formal Theory Research Group** at National Sun Yat-Sen University aims to tackle various problems in theoretical physics with mathematical and geometrical tools.
   
   - block: collection
     content:
