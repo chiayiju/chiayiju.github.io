@@ -24,7 +24,7 @@ bio:
   Dr. Ju is a formal theorist. He is primarily interested in geometric approaches in various fields of theoretical physics, including quantum foundations/non-Hermitian quantum physics, quantum information, string theories, and supersymmetric theories.
 
 interests:
-  - Quantum foundations/(Non-)Hermitian Quantum Physics
+  - Quantum foundations / (Non-)Hermitian Quantum Physics
   - String Theories
   - Supersymmetric Field Theories
   - Quantum Information
