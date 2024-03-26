@@ -7,7 +7,7 @@ authors:
 date: '2024-03-01'
 publishDate: '2024-03-26T03:16:09.147839Z'
 publication_types:
-- article-journal
+- article
 abstract: A recent study shows that an emergent evolution dimension, in addition to
   time, can be induced if the quantum system depends on a continuous parameter. The
   evolution in the emergent evolution dimension is described by a parallel transport,
