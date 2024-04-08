@@ -10,7 +10,7 @@ date: '2024-04-01'
 publishDate: '2024-04-08T14:32:40.918471Z'
 publication_types:
 - article-journal
-  abstract: To store quantum information, quantum memory plays a central intermediate
+abstract: To store quantum information, quantum memory plays a central intermediate
   ingredient in a network. The minimal criterion for a reliable quantum memory is
   the maintenance of the entangled state, which can be described by the non-entanglement-breaking
   (non-EB) channel. In this work, we show that all single-qubit quantum memory can
