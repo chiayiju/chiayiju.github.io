@@ -26,8 +26,6 @@ abstract: To store quantum information, quantum memory plays a central intermedi
 publication: '*Phys. Rev. Res.*'
 doi: 10.1103/PhysRevResearch.6.023035
 links:
-- name: URL
-  url: https://link.aps.org/doi/10.1103/PhysRevResearch.6.023035
 - name: arXiv
   url: https://arxiv.org/abs/2312.06939
 ---
