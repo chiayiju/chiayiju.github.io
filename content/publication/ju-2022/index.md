@@ -12,7 +12,7 @@ date: '2022-04-01'
 publishDate: '2024-03-13T10:51:25.944578Z'
 publication_types:
 - article-journal
-publication: '*Phys. Rev. Research*'
+publication: '*Phys. Rev. Res.*'
 doi: 10.1103/physrevresearch.4.023070
 
 links:
