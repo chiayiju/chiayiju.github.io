@@ -9,4 +9,4 @@ We are offering a micro-credit course "A Tour of Theoretical Physics" for studen
 
 <!--more-->
 
-<img src="/Poster1.jpg" alt="Poster">
+<img src="/Poster(04102024).jpg" alt="Poster">
