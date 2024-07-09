@@ -10,7 +10,7 @@ last_name: Lin
 superuser: false
 
 # Role/position
-role: Master's Student
+role: Alumni
 
 # Organizations/Affiliations
 organizations:
@@ -24,6 +24,9 @@ interests:
   - Theoretical physics
 education:
   courses:
+    - course: Master in Physics
+      institution: National Sun Yat-Sen University
+      year: 2024
     - course: BSc in Physics
       institution: National Sun Yat-Sen University
       year: 2023
@@ -54,6 +57,6 @@ user_groups:
 
 Yen-Ting is interested in the geometrical approach to quantum physics.
 
-He is currently working with Dr. Ju on the perturbation method for non-Hermitian quantum systems.
+His thesis title is "Emergent Dimension Inspired (Non-)Hermitian-Compatible Time-Independent Perturbation Method."
 
 ![Reading with a magnifying glass](magnifyingglass.jpg)
