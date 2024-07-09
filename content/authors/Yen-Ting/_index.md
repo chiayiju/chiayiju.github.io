@@ -10,7 +10,7 @@ last_name: Lin
 superuser: false
 
 # Role/position
-role: Alumni
+role: Master Alumni
 
 # Organizations/Affiliations
 organizations:
@@ -52,7 +52,7 @@ highlight_name: true
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Master's Student
+  - Alumni
 ---
 
 Yen-Ting is interested in the geometrical approach to quantum physics.
