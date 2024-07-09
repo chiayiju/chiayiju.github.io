@@ -14,10 +14,8 @@ role: Master Alumni
 
 # Organizations/Affiliations
 organizations:
-  - name: Department of Physics, National Sun Yat-Sen University
-    url: 'https://phys.nsysu.edu.tw/'
-  - name: Center for Theoretical and Computational Physics, National Sun Yat-Sen University
-    url: 'https://ctcp-phys.nsysu.edu.tw/'
+  - name: Taiwan Semiconductor Manufacturing Company Limited
+    url: 'https://phys.nsysu.edu.tw/](https://www.tsmc.com/)'
 
 interests:
   - Quantum theories
