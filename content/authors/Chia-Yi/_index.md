@@ -79,8 +79,8 @@ user_groups:
   - Principal Investigator
 ---
 
-Dr. Ju's background is in formal theory. He is primarily interested in geometric approaches in various fields of theoretical physics, including quantum information, string theories, and supersymmetric theories.
-  
-Recently, he has turned most of his attention to the foundations of non-Hermitian quantum physics. Rather than standard approaches to quantum mechanics, he tackles quantum theories using differential geometry (or fiber bundle) theories, which could naturally extend conventional quantum mechanics to non-Hermitian regimes.
-  
-Dr. Ju also collaborates with many quantum information groups on various theoretical topics, mainly on the restrictions of quantum information from quantum mechanical laws. He maintains a close association with the quantum information community.
+Dr. Ju's background is in formal theory. He is primarily interested in geometric approaches in various fields of theoretical physics, including quantum information, string theory, and supersymmetric theory.
+
+Currently, he focuses on the foundations of non-Hermitian quantum physics. Rather than using standard approaches to quantum mechanics, he tackles quantum theories using differential geometry (or fiber bundle) theories, which can naturally extend conventional quantum mechanics to non-Hermitian regimes.
+
+In the meantime, Dr. Ju applies the results inspired by non-Hermitian physics to quantum information theory and collaborates with many quantum information groups on various theoretical topics, mainly on the restrictions of quantum information from quantum mechanical laws.
