@@ -25,8 +25,8 @@ sections:
       directions: Room PH5006, Physics Building
       office_hours:
         - 'Office Hours:'
-        - 'Monday 14:00 to 16:00'
-        - 'Wednesday 10:00 to 12:00'
+        - 'Monday 09:00 to 11:00'
+        - 'Tuesday 14:00 to 16:00'
       # appointment_url: 'https://calendly.com'
       #contact_links:
       #  - icon: comments
