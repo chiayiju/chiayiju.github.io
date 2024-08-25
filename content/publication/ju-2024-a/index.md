@@ -11,6 +11,8 @@ publication: '*arXiv*'
 doi: 10.48550/ARXIV.2403.16503
 tags:
 - Quantum Physics (quant-ph)
-- 'FOS: Physical sciences'
-- 'FOS: Physical sciences'
+
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2204.05657
 ---
