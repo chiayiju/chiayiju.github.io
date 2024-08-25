@@ -3,7 +3,7 @@ title: Quantum State Behavior at Exceptional Points and Quantum Phase Transition
 authors:
 - Chia-Yi Ju
 - Fu-Hsiang Huang
-date: '2024-01-01'
+date: '2024-08-14'
 publishDate: '2024-08-25T22:50:47.938065Z'
 publication_types:
 - manuscript
