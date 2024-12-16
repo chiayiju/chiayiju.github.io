@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<title>Formal Theory Research Group</title>
+		<link rel = "icon" type = "image/x-icon" href = "images/icon.png">
+		<link rel = "stylesheet" href = "styles.css">
+		<script src = "main.js"></script>
+		
+		<script src = "header-component.js" defer></script>
+		<script src = "footer-component.js" defer></script>
+
+		<style>
+			.dot-lines p::before {
+				content: "• ";
+				color: black;
+				margin-right: 5px;
+			}
+  		</style>
+	</head>
+	
+	<body onload = "onload();">
+		<header-component></header-component>
+		
+		<strong style = "position: relative; left: 5rem; text-align: left; font-size:30px; line-height: 2;">Affiliations:</strong><br>
+		<div style = "position: relative; left: 12rem; text-align: left; font-size:25px;" class = "dot-lines">
+			<p class = "enlarge"><a href = "https://www.nsysu.edu.tw/" target = "_blank">National Sun Yat-sen University (NSYSU)</p></a><br>
+			<p class = "enlarge"><a href = "https://phys.nsysu.edu.tw/" target = "_blank">Department of Physics, National Sun Yat-sen University</a></p><br>
+			<p class = "enlarge"><a href = "https://ctcp-phys.nsysu.edu.tw/" target = "_blank">Center for Theoretical and Computational Physics (CTCP), National Sun Yat-sen University</a></p><br>
+			<p class = "enlarge"><a href = "https://phys.ncts.ntu.edu.tw/" target = "_blank">Physics Division, National Center for Theoretical Sciences (NCTS)</a></p><br>
+		</div>
+
+		<strong style = "position: relative; left: 5rem; text-align: left; font-size:30px; line-height: 2;">Alma Mater:</strong><br>
+		<div style = "position: relative; left: 12rem; text-align: left; font-size:25px;" class = "dot-lines">
+			<p class = "enlarge"><a href = "https://www.stonybrook.edu/" target = "_blank">Stony Brook University (SBU) [or State University of New York at Stony Brook (SUNY SB)]</a></p><br>
+			<p class = "enlarge"><a href = "https://www.stonybrook.edu/commcms/physics/" target = "_blank">Department of Physics and Astronomy, Stony Brook University</a></p><br>
+			<p class = "enlarge"><a href = "http://insti.physics.sunysb.edu/itp/www/" target = "_blank">C.N. Yang Institute for Theoretical Physics (YITP), Stony Brook University</a></p><br>
+			<p class = "enlarge"><a href = "https://www.nchu.edu.tw/" target = "_blank">National Chung Hsing University (NCHU)</a></p><br>
+			<p class = "enlarge"><a href = "https://www.phys.nchu.edu.tw/" target = "_blank">Department of Physics, National Chung Hsing University</a></p><br>
+		</div>
+
+		<strong style = "position: relative; left: 5rem; text-align: left; font-size:30px; line-height: 2;">Useful Links:</strong><br>
+		<div style = "position: relative; left: 12rem; text-align: left; font-size:25px;" class = "dot-lines">
+			<p class = "enlarge"><a href = "https://inspirehep.net/" target = "_blank">INSPIRE</a></p><br>
+			<p class = "enlarge"><a href = "https://arxiv.org/" target = "_blank">arXiv</a></p><br>
+			<p class = "enlarge"><a href = "https://www.nstc.gov.tw/" target = "_blank">National Science and Technology Council (NSTC)</a></p><br>
+		</div>
+
+		<footer-component></footer-component>
+	</body>
+</html>
