@@ -1,0 +1,9 @@
+a {color: #000000;}
+a: visited {color: #000000;}
+
+body.dark-mode {
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+body.dark-mode a {color: #ffffff;}
+body.dark-mode a: visited {color: #ffffff;}
