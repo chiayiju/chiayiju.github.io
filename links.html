@@ -3,11 +3,20 @@
 	<head>
 		<meta charset = "UTF-8">
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		
 		<title>Formal Theory Research Group</title>
 		<link rel = "icon" type = "image/x-icon" href = "images/icon.png">
-		<link rel = "stylesheet" href = "styles.css">
+
+		<style>
+		    body {
+				display: none;
+			}
+		</style>
+
+		<link rel="stylesheet" href="styles.css">
+
 		<script src = "main.js"></script>
-		
+
 		<script src = "header-component.js" defer></script>
 		<script src = "footer-component.js" defer></script>
 
@@ -22,6 +31,8 @@
 	
 	<body onload = "onload();">
 		<header-component></header-component>
+
+		<script src = "toggletheme.js"></script>
 		
 		<strong style = "position: relative; left: 5rem; text-align: left; font-size:30px; line-height: 2;">Affiliations:</strong><br>
 		<div style = "position: relative; left: 12rem; text-align: left; font-size:25px;" class = "dot-lines">

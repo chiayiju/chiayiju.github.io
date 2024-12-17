@@ -1,9 +1,9 @@
-a {color: #000000;}
-a: visited {color: #000000;}
-
-body.dark-mode {
-  background-color: #1b1b1b;
-  color: #ffffff;
+html[data-theme="dark"] {
+	background-color: #121212;
+	color: white;
 }
-body.dark-mode a {color: #ffffff;}
-body.dark-mode a: visited {color: #ffffff;}
+
+html[data-theme="light"] {
+	background-color: white;
+	color: black;
+}
