@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<link rel = "stylesheet" href = "styles.css">
+		<script src = "main.js"></script>
+
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+		<title>Formal Theory Research Group</title>
+		<link rel = "icon" type = "image/x-icon" href = "images/icon.png">
+
+		<script src = "header-component.js" defer></script>
+		<script src = "footer-component.js" defer></script>
+
+		<style>
+			.enLarge {
+				display: inline-block;
+				transition: transform 1s ease;
+			}
+
+			.enLarge:hover {
+				transform: scale(2);
+			}
+		</style>
+	</head>
+
+	<body onload = "onload();">
+		<header-component></header-component>
+	
+		<div style = "text-align: center;">
+			<div style = "position: relative;max-width: 30%; display: inline-block; top: -10rem;">
+				<p style = "text-align: left; text-align: center; font-size: 60px; font-weight: bold;" class = "enLarge">
+					Formal Theory<br>
+					Research Group
+				</p>
+
+				<p style = "text-align: left; font-size: 30px;" class = "enlarge">
+					The <strong> Formal Theory Research Group </strong> at <strong> National Sun Yat-sen University </strong> aims to tackle various problems in theoretical physics with mathematical and geometrical tools.
+				</p>
+			</div>
+
+			<div style="position: relative; left: 3rem; display: inline-block;">
+				<img src = "images/desk.jpg" alt = "Formal Theory Research" style = "left: 5rem; -webkit-mask-image: radial-gradient(circle, black 40%, transparent 70%);" width = "600px" class = "enlarge">
+			</div>
+		</div>
+
+		<div style = "text-align: center;">
+			<p style = "text-align: left; font-size: 20px; max-width: 55%;" class = "enlarge">
+			 Our research group is mainly interested in the mathematical structures in physics. We explore varied areas in theoretical physics, from quantum formalism and superstring theories to quantum information and computing. Specifically, we study the geometrical structures in these fields, aiming to deepen our understanding of theoretical physics and translate it into practical applications.
+			</p>
+		</div>
+
+		<footer-component></footer-component>
+	</body>
+</html>
