@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<title>Formal Theory Research Group</title>
+		<link rel = "icon" type = "image/x-icon" href = "../images/icon.png">
+
+		<style>
+		    body {
+				display: none;
+			}
+		</style>
+
+		<link rel="stylesheet" href="../styles.css">
+
+		<script src = "main.js"></script>
+
+		<script src = "header-component.js" defer></script>
+		<script src = "footer-component.js" defer></script>
+		<script type= "text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script type= "text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
+	</head>
+	
+	<body>
+		<header-component></header-component>
+
+		<script src = "toggletheme.js"></script>
+		
+		<h2>Covariant Derivatives</h2>
+		
+		We first recall that, in Euclidean space, a vector field can be defined as
+		\[
+			\vec{f} = f^i(x) \hat{e}_i,
+		\]
+		where the \(\hat{e}_i\) form a basis, and \(f^i(x)\) is a function depending on the coordinates \(\lbrace x^1$, \(x^2\), \(\cdots\rbrace\). However, we can also choose the basis to be coordinate-dependent, namely,
+		\[
+			\vec{f} = f^i(x) \hat{e}_i(x).
+		\]
+		
+		In this case, a partial derivative with respect to a coordinate becomes
+		\[
+			\partial_i \vec{f} = \left( \partial_i f^j \right) \hat{e}_j + f^j \left( \partial_i \hat{e}_j \right)
+		\]
+		\[
+			= \left( \partial_i f^j \right) \hat{e}_j + f^j \left( \Gamma^k_{ij} \hat{e}_k \right)\\
+			= \left( \partial_i f^j + \Gamma^j_{ik} f^k \right) \hat{e}_j,
+		\]
+		where \(\partial_i \equiv \dfrac{\partial}{\partial x^i}$. The second equality [from \eqref{diff1} to \eqref{diff2}] follows from the fact that the derivative of \(\hat{e}_i\) remains within in the same space and can therefore be expanded in terms of the same \(\hat{e}$'s.
+		
+		Following the same derivation, we find that for a second-rank tensor,
+		\[
+			\overleftrightarrow{T} = T^{jk} \hat{e}_j \hat{e}_k,
+		\]
+		the partial derivative becomes
+		\[
+			\partial_i \overleftrightarrow{T} = \left( \partial_i T^{jk} + \Gamma^j_{i\ell} T^{\ell k} + \Gamma^k_{i\ell} T^{j \ell} \right) \hat{e}_j \hat{e}_k.
+		\]
+		
+		Since finding notation for a third- (or higher-) rank tensor (maybe \(\overset{\uparrow}{\overleftrightarrow{R}}$?) is to too much work, and for the sake of clarity, differential we only focus on the components. To be more specific, we define
+		\[
+			\nabla_t \phi & = \partial_i \phi \label{CovDiff0}\\
+			\nabla_i f^j & = \partial_i f^j + \Gamma^j_{ik} f^k, \label{CovDiff1}\\
+			\nabla_i T^{jk} & = \partial_i T^{jk} + \Gamma^j_{i\ell} T^{\ell k} + \Gamma^k_{i\ell} T^{j \ell} \label{CovDiff2},
+		\]
+		which generalizes natually to any finite-rank tensor. Here, the \(\phi\) is a scalar or an order-zero tensor, and since there is no \(\hat{e}$'s involved in the derivative, there is no \(\Gamma\) term.
+		
+		These are called the ``covariant derivatives,'' although their origin lies in the standard partial derivative. For convenience, we often refer to \(f^i\) as the vector (abuse of the terminology), despite the fact that it's just the component of the vector.
+		
+		While the \(\Gamma$'s are determined if \(\hat{e}$'s are specified, not every choice of \(\hat{e}_i\) is reasonable. For noew, the \(\Gamma$'s here are consider undeteremined (yet) and we'll use other conditions to fix them.
+		
+		<footer-component></footer-component>
+	</body>
+</html>
