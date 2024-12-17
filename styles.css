@@ -1,7 +1,8 @@
 html[data-theme = "dark"] {
-	background-color: #121212;
+	background-color: black;
 	color: white;
 	overflow-y: scroll;
+}
 
 html[data-theme = "dark"] a {
 	color: white;
