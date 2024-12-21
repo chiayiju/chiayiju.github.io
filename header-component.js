@@ -20,7 +20,6 @@ class HeaderComponent extends HTMLElement {
                             <a href = "index.html" style = "margin-left: 4rem;" class = "enlarge">Home</a>
                             <a href = "members.html" style = "margin-left: 4rem;" class = "enlarge">Members</a>
                             <a href = "publications.html" style = "margin-left: 4rem;" class = "enlarge">Publications</a>
-                            <a href = "blog.html" style = "margin-left: 4rem;" class = "enlarge">Blog</a>
                             <a href = "notes.html" style = "margin-left: 4rem;" class = "enlarge">Notes</a>
                             <a href = "students.html" style = "margin-left: 4rem;" class = "enlarge">Prospective Students</a>
                             <a href = "links.html" style = "margin-left: 4rem;" class = "enlarge">Links</a>
