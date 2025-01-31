@@ -21,7 +21,7 @@ class HeaderComponent extends HTMLElement {
                             <a href = "members.html" style = "margin-left: 4rem;" class = "enlarge">Members</a>
                             <a href = "publications.html" style = "margin-left: 4rem;" class = "enlarge">Publications</a>
                             <a href = "blog.html" style = "margin-left: 4rem;" class = "enlarge">Blog</a>
-                            <a href = "students.html" style = "margin-left: 4rem;" class = "enlarge">Prospective Students</a>
+                            <a href = "students.html" style = "margin-left: 4rem;" class = "enlarge">For Prospective Students</a>
                             <a href = "links.html" style = "margin-left: 4rem;" class = "enlarge">Links</a>
                             <button id = "theme-toggle" style = "width: 40px; height: 40px; border-radius: 50%; border: none; font-size: 20px; cursor: pointer; position: absolute; top: -10px; right: 40px; text-align: center; background-color: #f5f5f5; color: #333;" onclick = "toggleTheme()" class = "enlarge">&#9728;</button>
                         </nav>
