@@ -46,32 +46,53 @@
 
 		<script src = "toggletheme.js"></script>
 		
-		<div style = "font-size: 20px; position: fixed; top: 50%; margin-right: 5rem; right: 0rem; width: 10%;">
+		<div style = "font-size: 20px; position: fixed; top: 30%; margin-right: 10%; right: 0rem; width: 10%;">
 			Show category:<br />
-			<select id = "filter" onchange="filterTable()">
-				<option value="all">All</option>
-				<option value="PopSci">Popular Science</option>
-				<option value="Research">Research Related</option>
-				<option value="Course">Course Related</option>
+			<select id = "filter" onchange = "FilterTable()">
+				<option value = "All">All</option>
+				<option value = "PopSci">Popular Science</option>
+				<option value = "Research">Research Related</option>
+				<option value = "Course">Course Related</option>
 			</select>
+
+			<div id="courseDiv" style="display: none; margin-top: 1rem;">
+				Course name:<br />
+				<select id = "coursefilter" onchange = "CourseFilterTable()">
+					<option value = "All">All</option>
+					<option value = "QuantumPhysics">Quantum Physics</option>
+					<option value = "TheoreticalPhysics2025">Theoretical Physics 2025</option>
+				</select>
+			</div>
 		</div>
 
-		<table style = "position: relative; margin-left: 5rem; width: 80%;" border = "5">
+		<table style = "position: relative; margin-left: 5rem; width: 70%;" border = "5">
 			<thead>
 				<tr>
-					<th>Article Title</th>
-					<th>Posted Date</th>
-					<th>Category</th>
+					<th style = "width: 60%">Article Title</th>
+					<th style = "width: 20%">Posted Date</th>
+					<th style = "width: 20%">Category</th>
 				</tr>
 			</thead>
 
 			<tbody>
-				<tr class = "PopSci Course">
+				<tr class = "Course TheoreticalPhysics2025">
+					<td>
+						<a href = "./blog/ClassicalClosedString.html"> The General Solution of Classical Closed String </a>
+					</td>
+					<td>
+						April 1, 2025
+					</td>
+					<td>
+						Course Related
+					</td>
+				</tr>
+
+				<tr class = "PopSci Course QuantumPhysics TheoreticalPhysics2025">
 					<td>
 						<a href = "./blog/NaturalUnits.html"> Natural Units </a>
 					</td>
 					<td>
-						Mar. 31, 2025
+						Marach 31, 2025
 					</td>
 					<td>
 						Popular Science<br />
@@ -82,17 +103,41 @@
 		</table>
 
 		<script>
-			function filterTable() {
-				var selectedCategory = document.getElementById("filter").value;
+			function CourseFilterTable() {
+				var selectedCategory = document.getElementById("coursefilter").value;
 				var rows = document.querySelectorAll("tbody tr");
 
 				rows.forEach(function(row) {
-					if (selectedCategory === "all" || row.classList.contains(selectedCategory)) {
+					if (selectedCategory === "All" || row.classList.contains(selectedCategory)) {
 						row.style.display = "table-row";
 					} else {
 						row.style.display = "none";
 					}
 				});
+			}
+		</script>
+
+		<script>
+			function FilterTable() {
+				var selectedCategory = document.getElementById("filter").value;
+				var rows = document.querySelectorAll("tbody tr");
+				var courseDiv = document.getElementById("courseDiv");
+
+				rows.forEach(function(row) {
+					if (selectedCategory === "All" || row.classList.contains(selectedCategory)) {
+						row.style.display = "table-row";
+					} else {
+						row.style.display = "none";
+					}
+				});
+
+				if (courseDiv) {
+					if (selectedCategory === "Course") {
+						courseDiv.style.display = "block";
+					} else {
+						courseDiv.style.display = "none";
+					}
+				}
 			}
 		</script>
 
