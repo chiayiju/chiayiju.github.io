@@ -12,6 +12,29 @@ class HeaderComponent extends HTMLElement {
 				}
 			</style>
 			
+			<style>
+			body {
+				display: none;
+				padding-bottom: 2rem;
+			}
+
+			.responsive-text-tiny {
+				font-size: clamp(14px, 2vw, 20px);
+			}
+
+			.responsive-text {
+				font-size: clamp(16px, 2vw, 25px);
+			}
+
+			.responsive-text-section {
+				font-size: clamp(21px, 2vw, 30px);
+			}
+
+			.responsive-text-title {
+				font-size: clamp(28px, 2vw, 40px);
+			}
+		</style>
+			
             <header>
                 <h1><a href = "../index.html" style = "margin-left: 5rem; position: relative; top:0px;"><img id = "logo" src = "../images/logo-light.webp" alt = "Formal Theory" height = "100" class = "enlarge"></a></h1>
                 <div style = "position: relative; top: -70px;">
