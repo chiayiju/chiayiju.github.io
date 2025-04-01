@@ -1,0 +1,189 @@
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<title>Formal Theory Research Group</title>
+		<link rel = "icon" type = "image/x-icon" href = "../images/icon.png">
+
+		<link rel="stylesheet" href="../styles.css">
+
+		<script src = "main.js"></script>
+
+		<script src = "header-component.js" defer></script>
+		<script src = "footer-component.js" defer></script>
+		<script>
+			MathJax = {
+				tex: {
+					tags: 'ams'
+				}
+			};
+		</script>
+		<script type = "text/javascript" id = "MathJax-script" async src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	
+	<body>
+		<header-component></header-component>
+
+		<script src = "toggletheme.js"></script>
+
+		<p style = "text-align: right; margin-right: 10%;" class = "responsive-text-tiny">
+			Posted: April 1, 2025
+		</p>
+
+		<p style = "text-align: center;" class = "responsive-text-title">The Solution of a Classical String</p>
+		
+		<div style = "position: relative; margin: 0 auto; margin-bottom: 5%; max-width: 80%; line-height: 1.2;" class = "responsive-text">
+			
+			Given the Lagrangian density
+			\[
+				{\cal L} = \frac{1}{2 \pi \ell_\text{s}} \left[\left(\frac{\partial}{\partial \tau} X(\tau, \sigma)\right)^2 + \left(\frac{\partial}{\partial \sigma} X(\tau, \sigma)\right)^2\right],
+			\]
+			where \(\ell_\text{s}\) is a constant that characterizes the typical size of the string, a quick calculation shows that the equation of motion derived from this Lagrangian density is
+			\begin{align}
+				- \frac{\partial^2}{\partial \tau^2} X(\tau, \sigma) + \frac{\partial^2}{\partial \sigma^2} X(\tau, \sigma) = 0. \label{EOM}
+			\end{align}
+
+			If we further impose the periodic condition
+			\[X(\tau, \sigma + \pi) = X(\tau, \sigma),\]
+			the string is considered closed. <br /><br />
+
+			A known solution is known to the equation of motion under this condition is
+			\[
+				X(\tau, \sigma) = x + \ell_\text{s}^2 p \tau + i \ell_\text{s} \sum_{n \neq 0} \frac{1}{2 n} \left[a_n e^{-2 i n (\tau + \sigma)} + b_n e^{-2 i n (\tau - \sigma)}\right],
+			\]
+			where \(x\), \(p\), \(a_n\), and \(b_n\) are arbitrary constants. In the following, we will demonstrate how this solution is obtained.
+
+			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "responsive-text-section"> Step-by-Step Derivation</p>
+
+			We begin with the equation of motion in Eq. (\ref{EOM}). However, rather than solving it by brute force, we make a change of variables, namely, \(\sigma^{\pm} = \tau \pm \sigma\). Then, the \(\tau\)- and \(\sigma\)-derivatives become
+			\[
+				\Rightarrow\left\{
+					\begin{array}{l}
+						\dfrac{\partial}{\partial \tau} = \dfrac{\partial \sigma^+}{\partial \tau} \dfrac{\partial}{\partial \sigma^+} + \dfrac{\partial \sigma^-}{\partial \tau} \dfrac{\partial}{\partial \sigma^-} = \dfrac{\partial}{\partial \sigma^+} + \dfrac{\partial}{\partial \sigma^-}\\
+						\dfrac{\partial}{\partial \sigma} = \dfrac{\partial \sigma^+}{\partial \sigma} \dfrac{\partial}{\partial \sigma^+} + \dfrac{\partial \sigma^-}{\partial \sigma} \dfrac{\partial}{\partial \sigma^-} = \dfrac{\partial}{\partial \sigma^+} - \dfrac{\partial}{\partial \sigma^-}
+					\end{array}
+				\right. .
+			\]
+
+			Therefore, with a slight abuse of notation, the equation of motion becomes
+			\[
+				0 = - \frac{\partial^2}{\partial \tau^2} X + \frac{\partial^2}{\partial \sigma^2} X = - \left(\dfrac{\partial}{\partial \sigma^+} + \dfrac{\partial}{\partial \sigma^-}\right)^2 X + \left(\dfrac{\partial}{\partial \sigma^+} - \dfrac{\partial}{\partial \sigma^-}\right)^2 X = - 4 \dfrac{\partial}{\partial \sigma^+} \dfrac{\partial}{\partial \sigma^-} X.
+			\]
+
+			We can solve for \(X\) by integrating both sides over \(\sigma^+\) and \(\sigma^-\), i.e.,
+			\[
+				X = \int d\sigma^+ d\sigma^- \dfrac{\partial}{\partial \sigma^+} \dfrac{\partial}{\partial \sigma^-} X = \int d\sigma^+ d\sigma^- 0 = \int d\sigma^+ F(\sigma^+) = X_\text{L}(\sigma^+) + X_\text{R}(\sigma^-),
+			\]
+			where \(F(\sigma^+) = \dfrac{\partial}{\partial \sigma^+} X_\text{L}(\sigma^+)\), and \(X_\text{L}(\sigma^+)\) and \(X_\text{R}(\sigma^-)\) are arbitrary functions of \(\sigma^+\) and \(\sigma^-\), respectively. The subscript L and R stand for left-moving and right-moving modes. <br /><br />
+
+			Hence,
+			\[
+				X(\tau, \sigma) = X_\text{L}(\sigma^+) + X_\text{R}(\sigma^-) = X_\text{L}(\tau + \sigma) + X_\text{R}(\tau - \sigma).
+			\]
+
+			Next, we impose the periodic condition \(X(\tau, \sigma + \pi) = X(\tau, \sigma),\), which leads to
+			\begin{align*}
+				& X_\text{L}(\tau + \sigma + \pi) + X_\text{R}(\tau - \sigma - \pi) = X_\text{L}(\tau + \sigma) + X_\text{R}(\tau - \sigma)\\
+				\Rightarrow ~ & X_\text{L}(\sigma^+ + \pi) + X_\text{R}(\sigma^- - \pi) = X_\text{L}(\sigma^+) + X_\text{R}(\sigma^-).
+			\end{align*}
+
+			Rearranging the equation gives:
+			\begin{align}
+				X_\text{L}(\sigma^+ + \pi) - X_\text{L}(\sigma^+) = X_\text{R}(\sigma^-) - X_\text{R}(\sigma^- - \pi). \label{PeriodicConditions}
+			\end{align}
+
+			Since \(\sigma^+\) and \(\sigma^-\) are independent variables and the right hand side of Eq. (\ref{PeriodicConditions}) does not depend on \(\sigma^+\), the left hand side must also be independent of \(\sigma^+\). Therefore,
+			\begin{align}
+				X_\text{L}(\sigma^+ + \pi) - X_\text{L}(\sigma^+) = \pi \xi, \label{XL0}
+			\end{align}
+			where \(\xi\) is an arbitrary constant. Consequently,
+			\begin{align}
+				\Rightarrow X_\text{L}(\sigma^+ + n \pi) = n \pi \xi + X_\text{L}(\sigma^+). \label{XL}
+			\end{align}
+
+			Similarly, the right-hand side of Eq. (\ref{PeriodicConditions}) is also equal \(\pi \xi\), i.e.,
+			\[
+				X_\text{R}(\sigma^-) - X_\text{R}(\sigma^- - \pi) = \pi \xi
+			\]
+			\begin{align}
+				\Rightarrow X_\text{R}(\sigma^- + \pi) - X_\text{R}(\sigma^-) = \pi \xi. \label{XR0}
+			\end{align}
+			\begin{align}
+				\Rightarrow X_\text{R}(\sigma^- + n \pi) = n \pi \xi + X_\text{R}(\sigma^-). \label{XR}
+			\end{align}
+
+			Equations (\ref{XL}) and (\ref{XR}) suggest that both \(X_\text{L}(\sigma^-)\) and \(X_\text{R}(\sigma^-)\) contains linear terms. We therefore write
+			\[
+				\left\{
+				\begin{array}{l}
+					X_\text{L}(\sigma^+) = \sigma^+ \xi + P_\text{L}(\sigma^+)\\
+					X_\text{R}(\sigma^-) = \sigma^- \xi + P_\text{R}(\sigma^-)
+				\end{array}
+				\right.,
+			\]
+			where \(P_\text{R}(\sigma^-)\) and \(P_\text{L}(\sigma^+)\) are arbitrary functions. <br /><br />
+
+			From Eqs. (\ref{XR0}) and (\ref{XL0}), it follows that \(P_\text{R}(\sigma^-)\) and \(P_\text{L}(\sigma^+)\) are periodic with period \(\pi\), i.e.,
+			\begin{align*}
+				& \left\{
+				\begin{array}{l}
+					X_\text{L}(\sigma^+ + \pi) - X_\text{L}(\sigma^+) = \pi \xi\\
+					X_\text{R}(\sigma^- + \pi) - X_\text{R}(\sigma^-) = \pi \xi
+				\end{array}
+				\right.\\
+				\Rightarrow & \left\{
+				\begin{array}{l}
+					(\sigma^+ + \pi) \xi + P_\text{L}(\sigma^+ + \pi) - \left(\sigma^+ \xi + P_\text{L}(\sigma^+)\right) = \pi \xi\\
+					(\sigma^- + \pi) \xi + P_\text{R}(\sigma^- + \pi) - \left(\sigma^- \xi + P_\text{R}(\sigma^-)\right) = \pi \xi
+				\end{array}
+				\right.
+				\\
+				\Rightarrow & \left\{
+				\begin{array}{l}
+					P_\text{L}(\sigma^+ + \pi) = P_\text{L}(\sigma^+)\\
+					P_\text{R}(\sigma^- + \pi) = P_\text{R}(\sigma^-)
+				\end{array}
+				\right. .
+			\end{align*}
+
+			Therefore, \(P_\text{R}(\sigma^-)\) and \(P_\text{L}(\sigma^+)\) can be expanded in Fourier series, namely,
+			\[
+				\left\{
+				\begin{array}{l}
+					\displaystyle P_\text{L}(\sigma^+) = \sum_{n = - \infty}^{\infty} \alpha_n e^{- 2 i n \sigma^+}\\
+					\displaystyle P_\text{R}(\sigma^-) = \sum_{n = - \infty}^{\infty} \beta_n e^{- 2 i n \sigma^-}
+				\end{array}
+				\right. ,
+			\]
+			where \(\alpha_n\) and \(\beta_n\) are arbitrary constants.
+
+			Putting everything together, we find
+			\begin{align*}
+				X(\tau, \sigma) & = \sigma^+ \pi \xi + \sum_{n = - \infty}^{\infty} \alpha_n e^{- 2 i n \sigma^+} + \sigma^- \pi \xi + \sum_{m = - \infty}^{\infty} \beta_m e^{- 2 i m \sigma^-}\\
+				& = (\sigma^+ + \sigma^-) \pi \xi + \sum_{n = - \infty}^{\infty} \left(\alpha_n e^{- 2 i n \sigma^+} + \beta_n e^{- 2 i n \sigma^-}\right)\\
+				& = \tau \pi \xi + \sum_{n = - \infty}^{\infty} \left(\alpha_n e^{- 2 i n (\tau + \sigma)} + \beta_n e^{- 2 i n (\tau - \sigma)}\right)\\
+				& = \tau \pi \xi + \alpha_0 + \beta_0 + \sum_{n \neq 0} \left(\alpha_n e^{- 2 i n (\tau + \sigma)} + \beta_n e^{- 2 i n (\tau - \sigma)}\right),
+			\end{align*}
+			where we have separated out the \(n = 0\) terms in the last equality.
+
+			Since \(\xi\), \(\alpha_n\), \(\beta_n\) are arbitrary constants, we redefine the constants as
+			\[
+				\left\{
+				\begin{array}{ll}
+					\displaystyle \xi = \frac{\ell_\text{s}^2 p}{\pi}\\
+					\alpha_0 = x - \beta_0\\
+					\displaystyle \alpha_n = \frac{i \ell_\text{s}}{2 n} a_n & \text{(for \(n \neq 0\))}\\
+					\displaystyle \beta_n = \frac{i \ell_\text{s}}{2 n} b_n & \text{(for \(n \neq 0\))}
+				\end{array}
+				\right. .
+			\]
+
+			Finally, we arrived at the general solution:
+			\[
+				X(\tau, \sigma) = x + \ell_\text{s}^2 p \tau + i \ell_\text{s} \sum_{n \neq 0} \frac{1}{2 n} \left[a_n e^{-2 i n (\tau + \sigma)} + b_n e^{-2 i n (\tau - \sigma)}\right].
+			\]
+		</div>
+		
+		<footer-component></footer-component>
+	</body>
+</html>
