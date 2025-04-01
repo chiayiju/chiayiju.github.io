@@ -46,7 +46,7 @@
 
 		<script src = "toggletheme.js"></script>
 		
-		<div style = "font-size: 20px; position: fixed; top: 30%; margin-right: 10%; right: 0rem; width: 10%;">
+		<div style = "position: fixed; top: 30%; margin-right: 10%; right: 0%; width: 10%;" class = "responsive-text-tiny">
 			Show category:<br />
 			<select id = "filter" onchange = "FilterTable()">
 				<option value = "All">All</option>
@@ -55,7 +55,7 @@
 				<option value = "Course">Course Related</option>
 			</select>
 
-			<div id="courseDiv" style="display: none; margin-top: 1rem;">
+			<div id="courseDiv" style="display: none; margin-top: 10%;">
 				Course name:<br />
 				<select id = "coursefilter" onchange = "CourseFilterTable()">
 					<option value = "All">All</option>
@@ -65,7 +65,7 @@
 			</div>
 		</div>
 
-		<table style = "position: relative; margin-left: 5rem; width: 70%;" border = "5">
+		<table style = "position: relative; margin-left: 5%; width: 70%;" border = "5" class = "responsive-text">
 			<thead>
 				<tr>
 					<th style = "width: 60%">Article Title</th>
