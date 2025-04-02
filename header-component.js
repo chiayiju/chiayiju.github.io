@@ -34,18 +34,18 @@ class HeaderComponent extends HTMLElement {
 			</style>
 
 			<header>
-				<h1><a href = "index.html" style = "margin-left: clamp(1rem, 3vw, 4rem); position: relative; top:0px;"><img id = "logo" src = "images/logo-light.webp" alt = "Formal Theory" style = "width: 7.2vw;" class = "enlarge"></a></h1>
+				<h1><a href = "index.html" style = "margin-left: clamp(1rem, 3vw, 4rem); position: relative; top:0px;"><img id = "logo" src = "images/logo-light.webp" alt = "Formal Theory" style = "width: clamp(50px, 7.2vw, 700px);" class = "enlarge"></a></h1>
 				<div style = "position: relative; margin-top: -4rem;">
 					<h2>
-						<nav style = "text-align: right; margin-right: 10rem;">
-							<a href = "index.html" style = "margin-right: clamp(1rem, 3vw, 4rem); font-size: clamp(12.5px, 2.5vw, 25px);" class = "enlarge">Home</a>
-							<a href = "members.html" style = "margin-right: clamp(1rem, 3vw, 4rem); font-size: clamp(12.5px, 2.5vw, 25px);" class = "enlarge">Members</a>
-							<a href = "publications.html" style = "margin-right: clamp(1rem, 3vw, 4rem); font-size: clamp(12.5px, 2.5vw, 25px);" class = "enlarge">Publications</a>
-							<a href = "blog.html" style = "margin-right: clamp(1rem, 3vw, 4rem); font-size: clamp(12.5px, 2.5vw, 25px);" class = "enlarge">Blog</a>
-							<a href = "students.html" style = "margin-right: clamp(1rem, 3vw, 4rem); font-size: clamp(12.5px, 2.5vw, 25px);" class = "enlarge">For Students</a>
-							<a href = "links.html" style = "margin-right: clamp(1rem, 3vw, 4rem); font-size: clamp(12.5px, 2.5vw, 25px);" class = "enlarge">Links</a>
+						<nav style = "text-align: right; margin-right: clamp(2rem, 3vw, 4rem);">
+							<a href = "index.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">Home</a>
+							<a href = "members.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">Members</a>
+							<a href = "publications.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">Publications</a>
+							<a href = "blog.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">Blog</a>
+							<a href = "students.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">For Students</a>
+							<a href = "links.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">Links</a>
 
-							<button id = "theme-toggle" style = "width: clamp(1rem, 5vw, 2rem); height: clamp(1rem, 5vw, 2rem); border-radius: 50%; border: none; font-size: clamp(10px, 2vw, 20px); cursor: pointer; position: absolute; margin-top: -0.4rem; right: clamp(1rem, 2vw, 3rem); text-align: center; background-color: #f5f5f5; color: #333;" onclick = "toggleTheme()" class = "enlarge">&#9728;</button>
+							<button id = "theme-toggle" style = "width: clamp(1rem, 5vw, 2rem); height: clamp(1rem, 5vw, 2rem); border-radius: 50%; border: none; font-size: clamp(10px, 2vw, 20px); cursor: pointer; position: absolute; margin-top: -0.4rem; text-align: center; background-color: #f5f5f5; color: #333;" onclick = "toggleTheme()" class = "enlarge">&#9728;</button>
 						</nav>
 					</h2>
 				</div>
