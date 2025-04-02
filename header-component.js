@@ -8,19 +8,19 @@ class HeaderComponent extends HTMLElement {
 			    }
 
 			    .responsive-text-tiny {
-				    font-size: clamp(14px, 2vw, 20px);
+				    font-size: clamp(10px, 2vw, 20px);
 			    }
 
 			    .responsive-text {
-				    font-size: clamp(16px, 2vw, 25px);
+				    font-size: clamp(12.5px, 2.5vw, 25px);
 			    }
 
 			    .responsive-text-section {
-				    font-size: clamp(21px, 2vw, 30px);
+				    font-size: clamp(15px, 3vw, 30px);
 			    }
 
 			    .responsive-text-title {
-				    font-size: clamp(28px, 2vw, 40px);
+				    font-size: clamp(20px, 4vw, 40px);
 			    }
 			    
 			    .enlarge {
