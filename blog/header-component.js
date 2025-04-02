@@ -4,7 +4,7 @@ class HeaderComponent extends HTMLElement {
         	<style>
 			    body {
 				    display: none;
-				    padding-bottom: 2rem;
+				    padding-bottom: 4rem;
 			    }
 
 			    .responsive-text-tiny {
