@@ -10,13 +10,20 @@
 		<script src = "main.js"></script>
 		<style>
 			.mjx-container {
-				font-size: clamp(16px, 2vw, 25px);
+				font-size: clamp(12.5px, 2.5vw, 25px);
 			}
 		</style>
 
 		<script src = "header-component.js" defer></script>
 		<script src = "footer-component.js" defer></script>
-		<script type = "text/javascript" id="MathJax-script" async src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<script>
+			MathJax = {
+				tex: {
+					tags: 'ams'
+				}
+			};
+		</script>
+		<script type = "text/javascript" id = "MathJax-script" async src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	
 	<body>
