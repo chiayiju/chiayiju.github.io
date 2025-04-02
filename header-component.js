@@ -34,7 +34,7 @@ class HeaderComponent extends HTMLElement {
 		    </style>
 			
             <header>
-                <h1><a href = "index.html" style = "margin-left: clamp(1rem, 3vw, 4rem); position: relative; top:0px;"><img id = "logo" src = "images/logo-light.webp" alt = "Formal Theory" height = "100" class = "enlarge"></a></h1>
+                <h1><a href = "index.html" style = "margin-left: clamp(1rem, 3vw, 4rem); position: relative; top:0px;"><img id = "logo" src = "images/logo-light.webp" alt = "Formal Theory" style = "width: 7.2vw;" class = "enlarge"></a></h1>
                 <div style = "position: relative; margin-top: -4rem;">
                     <h2>
                         <nav style = "text-align: right; margin-right: 10rem;">
