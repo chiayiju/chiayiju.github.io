@@ -8,17 +8,9 @@
 		<link rel = "icon" type = "image/x-icon" href = "images/icon.png">
 
 		<style>
-		    body {
-				display: none;
-				padding-bottom: 2rem;
-			}
-
 			select {
-				padding: 0.2rem;
-				margin-bottom: 20px;
-				font-size: 20px;
-				border-radius: 5px;
-				border: 1px solid #ccc;
+				padding: 0%;
+				border-radius: 0.3rem;
 			}
 
 			table {
@@ -28,12 +20,12 @@
 			}
 
 			th, td {
-				padding: 0.5rem;
+				padding: 1%;
 				text-align: center;
 			}
 		</style>
 
-		<link rel="stylesheet" href="styles.css">
+		<link rel = "stylesheet" href = "styles.css">
 
 		<script src = "main.js"></script>
 
@@ -46,18 +38,18 @@
 
 		<script src = "toggletheme.js"></script>
 		
-		<div style = "position: fixed; top: 30%; margin-right: 10%; right: 0%; width: 10%;" class = "responsive-text-tiny">
+		<div style = "position: relative; top: 10%; left: 5%;" class = "responsive-text">
 			Show category:<br />
-			<select id = "filter" onchange = "FilterTable()">
+			<select id = "filter" onchange = "FilterTable()" class = "responsive-text">
 				<option value = "All">All</option>
 				<option value = "PopSci">Popular Science</option>
 				<option value = "Research">Research Related</option>
 				<option value = "Course">Course Related</option>
 			</select>
 
-			<div id="courseDiv" style="display: none; margin-top: 10%;">
-				Course name:<br />
-				<select id = "coursefilter" onchange = "CourseFilterTable()">
+			<div id = "courseDiv" style = "display: none; position: relative; margin-top: 1%;">
+				Course name: <br />
+				<select id = "coursefilter" onchange = "CourseFilterTable()" class = "responsive-text">
 					<option value = "All">All</option>
 					<option value = "QuantumPhysics">Quantum Physics</option>
 					<option value = "TheoreticalPhysics2025">Theoretical Physics 2025</option>
@@ -65,7 +57,7 @@
 			</div>
 		</div>
 
-		<table style = "position: relative; margin-left: 5%; width: 70%;" border = "5" class = "responsive-text">
+		<table style = "position: relative; width: 90%; margin-top: 2%; text-align: center;" border = "5" class = "responsive-text">
 			<thead>
 				<tr>
 					<th style = "width: 60%">Article Title</th>

@@ -8,16 +8,9 @@
 		<link rel = "icon" type = "image/x-icon" href = "images/icon.png">
 
 		<style>
-		    body {
-				display: none;
-				padding-bottom: 2rem;
-			}
-		</style>
-
-		<style>
 			.content {
 				display: none;
-				font-size:25px;
+				font-size: clamp(14px, 2vw, 20px);
 			}
 
 			.case {
@@ -25,12 +18,12 @@
 			}
 
 			.major {
-				font-size: 35px;
+				font-size: clamp(21px, 2vw, 30px);
 				font-weight: bold;
 			}
 
 			.discription {
-				font-size: 25px
+				font-size: clamp(16px, 2vw, 25px);
 			}
 		</style>
 
@@ -48,15 +41,15 @@
 		<script src = "toggletheme.js"></script>
 
 		<div>
-			<p style = "position: relative; top: 3rem;font-size:50px;">- <span class = "case" style = "font-size:40px; text-align: center;" onclick = "toggleContent('Coursework')">Course FAQs: Things You Might Want to Know（課程問題）</span></p>
-			<div id = "Coursework" style = "position: relative; top: 0rem; width: 90%; margin: 0 auto;" class = "content">
+			<p style = "position: relative; margin-top: 3rem;" class = "responsive-text-title">- <span class = "case" style = "text-align: center;" onclick = "toggleContent('Coursework')">Course FAQs: Things You Might Want to Know（課程問題）</span></p>
+			<div id = "Coursework" style = "position: relative; width: 90%; margin: 0 auto;" class = "content responsive-text">
 				<p>Below are answers to frequently asked questions about homework, exams, and grading policies.</p>
-				<li style = "position: relative; font-size: 35px; text-decoration: underline;">Teaching Assistants (TAs)</li>
+				<li style = "position: relative; text-decoration: underline;" class = "responsive-text-section">Teaching Assistants (TAs)</li>
 				<p class = "discription">
 					- You can find the email addresses of your TAs in the Course Intro section on <a href = "https://cu.nsysu.edu.tw/" target = "_blank" style = "text-decoration: underline;">Cyber University</a>.
 				</p>
 
-				<li style = "position: relative; font-size: 35px; text-decoration: underline;">Homework</li>
+				<li style = "position: relative; text-decoration: underline;" class = "responsive-text-section">Homework</li>
 				<p class = "discription">
 					- Homework assignments will be posted in the Announcements section on <a href = "https://cu.nsysu.edu.tw/" target = "_blank" style = "text-decoration: underline;">Cyber University</a>.<br />
 					- The submission location for each homework assignment is specified in the corresponding announcement.<br />
@@ -64,13 +57,13 @@
 					- If you have questions about homework grading, please contact the TA directly.
 				</p>
 
-				<li style = "position: relative; font-size: 35px; text-decoration: underline;">Midterm and Final Exams</li>
+				<li style = "position: relative; text-decoration: underline;" class = "responsive-text-section">Midterm and Final Exams</li>
 				<p class = "discription">
 					- Exams will take place in the same room where the class meets.<br />
 					- The exam schedule will follow the official university announcement unless otherwise stated.
 				</p>
 
-				<li style = "position: relative; font-size: 35px; text-decoration: underline;">Final Grades</li>
+				<li style = "position: relative; text-decoration: underline;" class = "responsive-text-section">Final Grades</li>
 				<p class = "discription">
 					- All grades (assignments, midterm, and final) will be posted on <a href = "https://cu.nsysu.edu.tw/" target = "_blank" style = "text-decoration: underline;">Cyber University</a><br />
 					- I will not respond to emails requesting additional credit unless there was a grading mistake.
@@ -78,22 +71,22 @@
 			</div>
 		</div>
 		
-		<div style = "position: relative; top: 8rem;">
-			<p style = "font-size:50px;">- <span class = "case" style = "font-size:40px; text-align: center;" onclick = "toggleContent('ReferenceLetter')">Before You Ask for a Reference Letter（推薦信）</span></p>
+		<div style = "position: relative; margin-top: 5rem;">
+			<p class = "responsive-text-title">- <span class = "case" style = "text-align: center;" onclick = "toggleContent('ReferenceLetter')">Before You Ask for a Reference Letter（推薦信）</span></p>
 			<div id = "ReferenceLetter" style = "position: relative; width: 90%; margin: 0 auto;" class = "content">
-				<p style = "position: relative; top: -1rem; font-size: 40px; font-weight: bold; text-align: center; text-decoration: underline; top: -3rem;">Reference Letter Policy</p>
-				<div style = "position: relative; font-size: 30px; text-align: left; top: -3rem;">
+				<p style = "position: relative; font-weight: bold; text-align: center; text-decoration: underline;" class = "responsive-text-section">Reference Letter Policy</p>
+				<div style = "position: relative; text-align: left;" class = "responsive-text">
 					I am happy to support students by writing reference letters when appropriate. However, due to time constraints and the need to provide meaningful recommendations, I can only write letters for students who meet the at least one of the following criteria:
-					<div style = "position: relative; top: 1rem; line-height: 4rem;">
+					<div style = "position: relative; margin-top: 1rem; line-height: 2;">
 						<li>You have taken at least one course with me and performed exceptionally well.</li>
 						<li>You have worked or collaborated with me on a research project.</li>
 						<li>You have served as a teaching assistant (TA) for one of my courses.</li>
 						<li>I know you well enough to provide a <strong> strong </strong> and personalized recommendation.</li>
 					</div>
 				</div>
-				<div style = "position: relative; font-size: 30px; text-align: left; top: -2rem;">
-					<p style = "font-size: 35px; text-decoration: underline;">Important Notes</p>
-					<div style = "position: relative; text-align: left; top: -1rem; line-height: 4rem;">
+				<div style = "position: relative; text-align: left;" class = "responsive-text">
+					<p style = "text-decoration: underline;" class = "responsive-text-section">Important Notes</p>
+					<div style = "position: relative; text-align: left; line-height: 2;">
 						<li>Please do not ask for a reference letter in person — <a href = "mailto:chiayiju@mail.nsysu.edu.tw" style = "text-decoration: underline;">email me</a> instead.</li>
 						<li>If I feel that I cannot write a strong letter for you, I will let you know honestly.<br /><span style = "position: relative; left: 2.5rem;">(A weak or generic letter is not beneficial to your application.)</span></li>
 						<li>If you are unsure whether I can provide a reference, feel free to ask via <a href = "mailto:chiayiju@mail.nsysu.edu.tw" style = "text-decoration: underline;">email</a>.</li>
@@ -102,10 +95,10 @@
 			</div>
 		</div>
 
-		<div style = "position: relative; top: 13rem; padding-bottom: 3rem;">
-			<p style = "font-size:50px;">- <span class = "case" style = "font-size:40px; text-align: center;" onclick = "toggleContent('ResearchGroup')">Thinking About Joining Our Research Group?（找指導老師）</span></p>
+		<div style = "position: relative; margin-top: 5rem;">
+			<p class = "responsive-text-title">- <span class = "case" style = "text-align: center;" onclick = "toggleContent('ResearchGroup')">Thinking About Joining Our Research Group?（找指導老師）</span></p>
 			<div id = "ResearchGroup" style = "position: relative; width: 90%; margin: 0 auto;" class = "content">
-				<div style = "position: relative; text-align: left; top: -1rem; font-size: 30px;">
+				<div style = "position: relative; text-align: left;" class = "responsive-text">
 					Welcome! If you are interested in joining our research group, please read the following information before reaching out. Our approach might be very different from what you expected, and I want to ensure that you are prepared for it.
 					<ol>
 						<li class = "major">We Don't Teach, We Train</li>
@@ -120,7 +113,7 @@
 
 						<li class = "major">Small Group, Different Research Paths</li>
 						<p class = "discription">
-							For better training, we only take a limited number of students. As a result, you will likely be working on very different topics from your peers. This means that you cannot always rely on senior students for help, and you will need to navigate challenges on your own.
+							For better training, we only take a limited number of students. As a result, you will likely be working on very different margin-topics from your peers. This means that you cannot always rely on senior students for help, and you will need to navigate challenges on your own.
 						</p>
 
 						<li class = "major">Communication Skills Matter</li>
@@ -135,7 +128,7 @@
 
 						<li class = "major">Required Background Knowledge</li>
 						<p class = "discription">
-							You must be prepared to learn certain foundational topics:<br />
+							You must be prepared to learn certain foundational margin-topics:<br />
 							<span style = "position: relative; left: 2rem">- Required: Quantum mechanics and differential geometry (you don’t need to master them before joining, but you must be willing to learn them).</span><br />
 							<span style = "position: relative; left: 2rem">- Recommended: Basic understanding of relativity, quantum field theory, supersymmetry, and string theory.</span>
 						</p>

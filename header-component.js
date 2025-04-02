@@ -24,7 +24,7 @@ class HeaderComponent extends HTMLElement {
 			    }
 			    
 			    .enlarge {
-					display: inline-block;
+				    display: inline-block;
 					transition: transform 0.3s ease;
 				}
 
