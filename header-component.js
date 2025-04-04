@@ -2,29 +2,8 @@ class HeaderComponent extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 			<style>
-				body {
-					display: none;
-					padding-bottom: 1.25rem;
-				}
-
 				header {
 					position: relative;
-				}
-
-				.text-tiny {
-					font-size: 1.25rem;
-				}
-
-				.text {
-					font-size: 1.5rem;
-				}
-
-				.text-section {
-					font-size: 2rem;
-				}
-
-				.text-title {
-					font-size: 2.5rem;
 				}
 
 				.enlarge {
@@ -50,32 +29,71 @@ class HeaderComponent extends HTMLElement {
 					text-align: right;
 				}
 
-				/* Default */
-				nav#main-nav {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: flex-end;
-					gap: 6rem;
-				}
+				/* Default Screen */
+					body {
+						display: none;
+						padding-bottom: 1.25rem;
+					}
 
-				.nav-link {
-					font-size: 2rem;
-				}
+					.text-tiny {
+						font-size: 1.25rem;
+					}
 
-				/* Hide the hamburger by default */
-				#menu-toggle {
-					position: absolute;
-					top: 1rem;
-					right: 1rem;
-					font-size: 1.8rem;
-					background: none;
-					border: none;
-					cursor: pointer;
-					display: none;
-				}
+					.text {
+						font-size: 1.5rem;
+					}
+
+					.text-section {
+						font-size: 2rem;
+					}
+
+					.text-title {
+						font-size: 2.5rem;
+					}
+				
+					nav#main-nav {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: flex-end;
+						gap: 6rem;
+					}
+
+					.nav-link {
+						font-size: 2rem;
+					}
+
+					#menu-toggle {
+						position: absolute;
+						top: 1rem;
+						right: 1rem;
+						font-size: 1.8rem;
+						background: none;
+						border: none;
+						cursor: pointer;
+						display: none;
+					}
 
 				/* Mobile styles */
 				@media (max-width: 1280px) {
+					body {
+						display: none;
+					}
+
+					.text-tiny {
+						font-size: 0.8rem;
+					}
+
+					.text {
+						font-size: 1rem;
+					}
+
+					.text-section {
+						font-size: 1.2rem;
+					}
+
+					.text-title {
+						font-size: 1.5rem;
+					}
 					#menu-toggle {
 						display: block;
 						position: relative;
