@@ -58,23 +58,23 @@
 			</div>
 		</div>
 
-		<table style = "position: relative; width: 90vw; margin-top: 1rem; text-align: center;" border = "5" class = "text">
+		<table id = "articleTable" style = "position: relative; width: 90vw; margin-top: 1rem; text-align: center;" border = "5" class = "text">
 			<thead>
 				<tr>
-					<th style = "width: 60%">Article Title</th>
-					<th style = "width: 20%">Posted Date</th>
-					<th style = "width: 20%">Category</th>
+					<th>Article Title</th>
+					<th style = "cursor: pointer;" onclick = "sortByDate()">Posted Date ⬍</th>
+					<th >Category</th>
 				</tr>
 			</thead>
 
 			<tbody>
 				<tr class = "Course TheoreticalPhysics2025">
 					<td>
-						<a href = "./blog/ClassicalClosedString.html"> The General Solution of Classical Closed String </a>
+						<a href = "./blog/ClassicalClosedString.html">The General Solution of a Classical Closed String</a>
 					</td>
-					<td>
-						April 1, 2025
-					</td>
+					<td data-date = "2025-04-01">
+						Apr. 1, 2025
+						</td>
 					<td>
 						Course Related
 					</td>
@@ -82,10 +82,10 @@
 
 				<tr class = "PopSci Course QuantumPhysics TheoreticalPhysics2025">
 					<td>
-						<a href = "./blog/NaturalUnits.html"> Natural Units </a>
+						<a href = "./blog/NaturalUnits.html">Natural Units</a>
 					</td>
-					<td>
-						Marach 31, 2025
+					<td data-date = "2025-03-31">
+						Mar. 31, 2025
 					</td>
 					<td>
 						Popular Science<br />
@@ -94,6 +94,26 @@
 				</tr>
 			</tbody>
 		</table>
+
+		<script>
+			let isAscending = false;
+
+			function sortByDate() {
+				const table = document.getElementById("articleTable");
+				const tbody = table.querySelector("tbody");
+				const rows = Array.from(tbody.querySelectorAll("tr"));
+
+				rows.sort((a, b) => {
+					const dateA = new Date(a.children[1].dataset.date);
+					const dateB = new Date(b.children[1].dataset.date);
+					return isAscending ? dateA - dateB : dateB - dateA;
+				});
+
+				isAscending = !isAscending;
+
+				rows.forEach(row => tbody.appendChild(row));
+			}
+		</script>
 
 		<script>
 			function CourseFilterTable() {
