@@ -42,4 +42,9 @@ function toggleTheme() {
 		footerBackground.style.backgroundColor = newTheme === "dark" ? 'black' : 'white';
 		footerBackground.style.color = newTheme === "dark" ? 'white' : 'black';
 	}
+
+	const hyperlink = document.querySelectorAll(".hyperlink");
+		hyperlink.forEach(color => {
+		color.style.color = newTheme === "dark" ? '#66ccff' : '#1a0dab';
+	});
 }

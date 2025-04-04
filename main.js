@@ -47,6 +47,11 @@
 			footerBackground.style.color = theme === "dark" ? 'white' : 'black';
 		}
 
+		const hyperlink = document.querySelectorAll(".hyperlink");
+			hyperlink.forEach(color => {
+			color.style.color = theme === "dark" ? '#66ccff' : '#1a0dab';
+		});
+
 		document.body.style.display = "block"; // Show body after setting the theme
 	});
 })();
