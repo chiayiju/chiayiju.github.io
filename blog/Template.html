@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<title>Formal Theory Research Group</title>
+		<link rel = "icon" type = "image/x-icon" href = "../images/icon.png">
+
+		<link rel="stylesheet" href="../styles.css">
+
+		<script src = "main.js"></script>
+		<style>
+			.mjx-container {
+				font-size: 1.5rem;
+			}
+		</style>
+
+		<script src = "header-component.js" defer></script>
+		<script src = "../footer-component.js" defer></script>
+		<script src = "../menu.js" defer></script>
+
+		<script>
+			MathJax = {
+				tex: {
+					tags: 'ams'
+				}
+			};
+		</script>
+		<script type = "text/javascript" id = "MathJax-script" async src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	
+	<body>
+		<header-component></header-component>
+
+		<script src = "toggletheme.js"></script>
+
+		<p style = "text-align: right; margin-right: 10vw; margin-top: 3rem;" class = "text-tiny">
+			Posted: Month Date, Year
+		</p>
+
+		<p style = "text-align: center;" class = "text-title">Title</p>
+		
+		<div style = "position: relative; margin-left:5vw; max-width: 90vw; line-height: 1.2;" class = "text">
+			
+			Content
+
+			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "text-section">Section</p>
+
+		</div>
+		
+		<footer-component></footer-component>
+	</body>
+</html>

@@ -11,12 +11,14 @@
 		<script src = "main.js"></script>
 		<style>
 			.mjx-container {
-				font-size: clamp(12.5px, 2.5vw, 25px);
+				font-size: 1.5rem;
 			}
 		</style>
 
 		<script src = "header-component.js" defer></script>
-		<script src = "footer-component.js" defer></script>
+		<script src = "../footer-component.js" defer></script>
+		<script src = "../menu.js" defer></script>
+
 		<script>
 			MathJax = {
 				tex: {
@@ -32,13 +34,13 @@
 
 		<script src = "toggletheme.js"></script>
 
-		<p style = "text-align: right; margin-right: 10%; margin-top: 5rem;" class = "responsive-text-tiny">
+		<p style = "text-align: right; margin-right: 10vw; margin-top: 3rem;" class = "text-tiny">
 			Posted: April 1, 2025
 		</p>
 
-		<p style = "text-align: center; margin-top: -1rem;" class = "responsive-text-title">The Solution of a Classical String</p>
+		<p style = "text-align: center;" class = "text-title">The Solution of a Classical String</p>
 		
-		<div style = "position: relative; margin: 0 auto; margin-bottom: 5%; max-width: 80%; line-height: 1.2;" class = "responsive-text">
+		<div style = "position: relative; margin-left:5vw; max-width: 90vw; line-height: 1.2;" class = "text">
 			
 			Given the Lagrangian density
 			\[
@@ -59,7 +61,7 @@
 			\]
 			where \(x\), \(p\), \(a_n\), and \(b_n\) are arbitrary constants. In the following, we will demonstrate how this solution is obtained.
 
-			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "responsive-text-section"> Step-by-Step Derivation</p>
+			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "text-section"> Step-by-Step Derivation</p>
 
 			We begin with the equation of motion in Eq. (\ref{EOM}). However, rather than solving it by brute force, we make a change of variables, namely, \(\sigma^{\pm} = \tau \pm \sigma\). Then, the \(\tau\)- and \(\sigma\)-derivatives become
 			\[
