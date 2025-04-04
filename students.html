@@ -10,7 +10,8 @@
 		<style>
 			.content {
 				display: none;
-				font-size: clamp(10px, 2vw, 20px);
+				padding: 0.2rem 1rem;
+				border-radius: 0.3rem;
 			}
 
 			.case {
@@ -18,12 +19,9 @@
 			}
 
 			.major {
-				font-size: clamp(15px, 3vw, 30px);
-				font-weight: bold;
+				font-size: 2rem;
+				font-weight: bold;	
 			}
-
-			.discription {
-				font-size: clamp(12.5px, 2.5vw, 25px);
 			}
 		</style>
 
@@ -33,6 +31,7 @@
 
 		<script src = "header-component.js" defer></script>
 		<script src = "footer-component.js" defer></script>
+		<script src = "menu.js" defer></script>
 	</head>
 	
 	<body>
@@ -41,30 +40,30 @@
 		<script src = "toggletheme.js"></script>
 
 		<div>
-			<p style = "position: relative; margin-top: 3rem;" class = "responsive-text-title">- <span class = "case" style = "text-align: center;" onclick = "toggleContent('Coursework')">Course FAQs: Things You Might Want to Know（課程問題）</span></p>
-			<div id = "Coursework" style = "position: relative; width: 90%; margin: 0 auto;" class = "content responsive-text">
+			<p style = "position: relative; margin-top: 3rem;" class = "text-section">- <span class = "case" style = "text-align: center;" onclick = "toggleContent('Coursework')">Course FAQs: Things You Might Want to Know（課程問題）</span></p>
+			<div id = "Coursework" style = "position: relative; max-width: 90vw; margin: 0 auto;" class = "content text">
 				<p>Below are answers to frequently asked questions about homework, exams, and grading policies.</p>
-				<li style = "position: relative; text-decoration: underline;" class = "responsive-text-section">Teaching Assistants (TAs)</li>
-				<p class = "discription">
+				<li style = "position: relative; text-decoration: underline;" class = "text-section">Teaching Assistants (TAs)</li>
+				<p class = "text">
 					- You can find the email addresses of your TAs in the Course Intro section on <a href = "https://cu.nsysu.edu.tw/" target = "_blank" style = "text-decoration: underline;">Cyber University</a>.
 				</p>
 
-				<li style = "position: relative; text-decoration: underline;" class = "responsive-text-section">Homework</li>
-				<p class = "discription">
+				<li style = "position: relative; text-decoration: underline;" class = "text-section">Homework</li>
+				<p class = "text">
 					- Homework assignments will be posted in the Announcements section on <a href = "https://cu.nsysu.edu.tw/" target = "_blank" style = "text-decoration: underline;">Cyber University</a>.<br />
 					- The submission location for each homework assignment is specified in the corresponding announcement.<br />
 					- Assignments will be graded by the TA.<br />
 					- If you have questions about homework grading, please contact the TA directly.
 				</p>
 
-				<li style = "position: relative; text-decoration: underline;" class = "responsive-text-section">Midterm and Final Exams</li>
-				<p class = "discription">
+				<li style = "position: relative; text-decoration: underline;" class = "text-section">Midterm and Final Exams</li>
+				<p class = "text">
 					- Exams will take place in the same room where the class meets.<br />
 					- The exam schedule will follow the official university announcement unless otherwise stated.
 				</p>
 
-				<li style = "position: relative; text-decoration: underline;" class = "responsive-text-section">Final Grades</li>
-				<p class = "discription">
+				<li style = "position: relative; text-decoration: underline;" class = "text-section">Final Grades</li>
+				<p class = "text">
 					- All grades (assignments, midterm, and final) will be posted on <a href = "https://cu.nsysu.edu.tw/" target = "_blank" style = "text-decoration: underline;">Cyber University</a><br />
 					- I will not respond to emails requesting additional credit unless there was a grading mistake.
 				</p>
@@ -72,10 +71,10 @@
 		</div>
 		
 		<div style = "position: relative; margin-top: 5rem;">
-			<p class = "responsive-text-title">- <span class = "case" style = "text-align: center;" onclick = "toggleContent('ReferenceLetter')">Before You Ask for a Reference Letter（推薦信）</span></p>
-			<div id = "ReferenceLetter" style = "position: relative; width: 90%; margin: 0 auto;" class = "content">
-				<p style = "position: relative; font-weight: bold; text-align: center; text-decoration: underline;" class = "responsive-text-section">Reference Letter Policy</p>
-				<div style = "position: relative; text-align: left;" class = "responsive-text">
+			<p class = "text-section">- <span class = "case" style = "text-align: center;" onclick = "toggleContent('ReferenceLetter')">Before You Ask for a Reference Letter（推薦信）</span></p>
+			<div id = "ReferenceLetter" style = "position: relative; width: 90vw; margin: 0 auto;" class = "content">
+				<p style = "position: relative; font-weight: bold; text-align: center; text-decoration: underline;" class = "text-section">Reference Letter Policy</p>
+				<div style = "position: relative; text-align: left;" class = "text">
 					I am happy to support students by writing reference letters when appropriate. However, due to time constraints and the need to provide meaningful recommendations, I can only write letters for students who meet the at least one of the following criteria:
 					<div style = "position: relative; margin-top: 1rem; line-height: 2;">
 						<li>You have taken at least one course with me and performed exceptionally well.</li>
@@ -84,8 +83,8 @@
 						<li>I know you well enough to provide a <strong> strong </strong> and personalized recommendation.</li>
 					</div>
 				</div>
-				<div style = "position: relative; text-align: left;" class = "responsive-text">
-					<p style = "text-decoration: underline;" class = "responsive-text-section">Important Notes</p>
+				<div style = "position: relative; text-align: left;" class = "text">
+					<p style = "text-decoration: underline;" class = "text-section">Important Notes</p>
 					<div style = "position: relative; text-align: left; line-height: 2;">
 						<li>Please do not ask for a reference letter in person — <a href = "mailto:chiayiju@mail.nsysu.edu.tw" style = "text-decoration: underline;">email me</a> instead.</li>
 						<li>If I feel that I cannot write a strong letter for you, I will let you know honestly.<br /><span style = "position: relative; left: 2.5rem;">(A weak or generic letter is not beneficial to your application.)</span></li>
@@ -96,45 +95,45 @@
 		</div>
 
 		<div style = "position: relative; margin-top: 5rem;">
-			<p class = "responsive-text-title">- <span class = "case" style = "text-align: center;" onclick = "toggleContent('ResearchGroup')">Thinking About Joining Our Research Group?（找指導老師）</span></p>
-			<div id = "ResearchGroup" style = "position: relative; width: 90%; margin: 0 auto;" class = "content">
-				<div style = "position: relative; text-align: left;" class = "responsive-text">
+			<p class = "text-section">- <span class = "case" style = "text-align: center;" onclick = "toggleContent('ResearchGroup')">Thinking About Joining Our Research Group?（找指導老師）</span></p>
+			<div id = "ResearchGroup" style = "position: relative; width: 90vw; margin: 0 auto;" class = "content">
+				<div style = "position: relative; text-align: left;" class = "text">
 					Welcome! If you are interested in joining our research group, please read the following information before reaching out. Our approach might be very different from what you expected, and I want to ensure that you are prepared for it.
 					<ol>
 						<li class = "major">We Don't Teach, We Train</li>
-						<p class = "discription">
+						<p class = "text">
 							We don't provide standard lectures in this group. Instead, we focus on training students to become independent researchers. This means you will need to actively explore concepts, develop your own understanding, and push the boundaries of what is known.
 						</p>
 
 						<li class = "major">Self-Learning Is Essential</li>
-						<p class = "discription">
+						<p class = "text">
 							Students in our group must have both the <strong> ability and willingness </strong> to learn by themselves. If you rely on structured teaching or expect step-by-step guidance, this may not be the best fit for you.
 						</p>
 
 						<li class = "major">Small Group, Different Research Paths</li>
-						<p class = "discription">
+						<p class = "text">
 							For better training, we only take a limited number of students. As a result, you will likely be working on very different margin-topics from your peers. This means that you cannot always rely on senior students for help, and you will need to navigate challenges on your own.
 						</p>
 
 						<li class = "major">Communication Skills Matter</li>
-						<p class = "discription">
+						<p class = "text">
 							Research is not just about solving problems; it’s also about explaining your work clearly. Presentation skills are a key part of our training, and you will be expected to learn how to communicate your research effectively.
 						</p>
 
 						<li class = "major">Minimal Coding Involvement</li>
-						<p class = "discription">
+						<p class = "text">
 							Although most students have the impression that coding skills are important in theoretical physics research (which is generally true), our research involves very little coding. While you are welcome to use computational tools to assist your work, I will neither intervene nor provide support for coding-related tasks.
 						</p>
 
 						<li class = "major">Required Background Knowledge</li>
-						<p class = "discription">
+						<p class = "text">
 							You must be prepared to learn certain foundational margin-topics:<br />
 							<span style = "position: relative; left: 2rem">- Required: Quantum mechanics and differential geometry (you don’t need to master them before joining, but you must be willing to learn them).</span><br />
 							<span style = "position: relative; left: 2rem">- Recommended: Basic understanding of relativity, quantum field theory, supersymmetry, and string theory.</span>
 						</p>
 
 						<li class = "major">Research Has No Predefined Answers</li>
-						<p class = "discription">
+						<p class = "text">
 							Unlike homework problems, research questions do not come with known answers. No one will be able to confirm if your results are correct until they are reviewed and/or publicized. This means:<br />
 							<span style = "position: relative; left: 2rem">- You must verify your own results before claiming them.</span><br />
 							<span style = "position: relative; left: 2rem">- Developing a strong sense of rigor and self-criticism is essential.</span>

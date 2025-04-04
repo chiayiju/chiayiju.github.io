@@ -13,6 +13,7 @@
 
 		<script src = "header-component.js" defer></script>
 		<script src = "footer-component.js" defer></script>
+		<script src = "menu.js" defer></script>
 	</head>
 	
 	<body>
@@ -22,24 +23,26 @@
 		
 		<!-- PI -->
 
-		<div style = "position: relative; text-align: center; width: 100vw;">
-			<div class = "responsive-text-title">
-				<strong>Principal Investigator</strong>
+		<div style = "position: relative; display: flex; flex-direction: column; align-items: center;">
+			<div style = "position: relative; text-align: center;" class = "text-title">
+				<strong>
+					Principal Investigator
+				</strong>
 			</div>
 			
-		<div style = "position: relative; text-align: center; margin-top: 3rem;">
-				<div style = "position: relative; width: 40vw; display: inline-block; text-align: right; vertical-align: top;">
+			<div style = "margin-top: 3rem;">
+				<div style = "text-align: center;">
 					<a href = "CYJu.html">
-						<img src = "members/Chia-Yi.jpg" style = "position: relative; width: 15vw; right: 2.5rem; overflow: hidden; border-radius: 50%; object-fit: cover; object-position: 0rem 0rem;">
+						<img src = "members/Chia-Yi.jpg" style = "position: relative; width: 20rem; overflow: hidden; border-radius: 50%; object-fit: cover; object-position: 0rem 0rem;">
 					</a>
 				</div>
 
-				<div style = "position: relative; width: 40vw; display: inline-block; text-align: left;">
-					<a href = "CYJu.html" class = "responsive-text-section">Chia-Yi Ju</a><a href = "mailto:chiayiju@mail.nsysu.edu.tw" style = "position: relative; left: 1rem; top: 0.2rem;" class = "enlarge"><img style = "width: 70%; overflow: hidden; border-radius: 15%;" src="images/email.jpg"></a>
-					<p class = "responsive-text">Assistant Professor</p>
-					<p class = "responsive-text">Ph.D in Physics, Stony Brook University</p>
-					<p class = "responsive-text">Research interests:
-						<div style="position: relative; left: 1rem; display: inline-block;" class = "responsive-text">
+				<div style = "position: relative; text-align: left; margin-top: 1rem;">
+					<a href = "CYJu.html" class = "text-section">Chia-Yi Ju</a><a href = "mailto:chiayiju@mail.nsysu.edu.tw" style = "position: relative; left: 1rem; top: 0.2rem;" class = "enlarge"><img style = "width: 70%; overflow: hidden; border-radius: 15%;" src="images/email.jpg"></a>
+					<p class = "text">Assistant Professor</p>
+					<p class = "text">Ph.D in Physics, Stony Brook University</p>
+					<p class = "text">Research interests:
+						<div style="position: relative; left: 1rem; display: inline-block;" class = "text">
 							- Quantum Formalism<br>
 							- Non-Hermitian Quantum Physics<br>
 							- String Theories<br>
@@ -47,73 +50,85 @@
 							- Quantum Information
 						</div>
 					</p>
-					<p class = "responsive-text">Office: PH5006, Physics Building</p>
+					<p class = "text">Office: PH5006, Physics Building</p>
 				</div>
 			</div>
 		</div>
 
 		<!-- Postdoc -->
 
-		<div style = "position: relative; text-align: center;width: 100vw; margin-top: 3rem;">
-			<div style = "position: relative;" class = "responsive-text-title">
+		<div style = "position: relative; display: flex; flex-direction: column; align-items: center; margin-top: 3rem;">
+			<div style = "position: relative; text-align: center;" class = "text-title">
 				<strong>
 					Postdoctoral Researcher(s)
 				</strong>
 			</div>
-			
-			<div style = "position: relative; margin-top: 3rem; text-align: center;">
-				<div style = "position: relative; width: 40vw; display: inline-block; text-align: right; vertical-align: top;">
-					<img src = "members/Wei-Ming.jpg" style = "position: relative; width: 15vw; right: 2.5rem; overflow: hidden; border-radius: 50%; object-fit: cover; object-position: 0rem 0rem;">
+
+			<div style = "margin-top: 3rem; display: flex; flex-wrap: wrap; gap: 4rem; max-width: 90vw; justify-content: center;">
+
+				<!-- Wei-Ming -->
+				<div style = "margin-top: 3rem; display: flex; flex-direction: column; align-items: center;">
+					<img src = "members/Wei-Ming.jpg" style = "position: relative; width: 20rem; overflow: hidden; border-radius: 50%; object-fit: cover; object-position: 0rem 0rem;">
+
+					<div style = "position: relative; text-align: left; margin-top: 1rem;">
+						<p class = "text-section">Wei-Ming Chen<a href = "mailto:tainist@gmail.com" style = "position: relative; left: 1rem; top: 0.2rem;" class = "enlarge"><img style = "width: 70%; overflow: hidden; border-radius: 15%;" src="images/email.jpg"></a></p>
+						<p class = "text">Research Associate</p>
+						<p class = "text">Ph.D in Physics, National Taiwan University</p>
+						<p class = "text">Research interests:
+							<div style="position: relative; left: 1rem; display: inline-block; vertical-align: top;" class = "text">
+								- Theoretical Physics<br>
+								- Scattering Amplitudes<br>
+								- Field Theory
+							</div>
+						</p>
+						<p class = "text">Office: PH1005, Physics Building</p>
+					</div>
 				</div>
 
-				<div style = "position: relative; width: 40vw; display: inline-block; text-align: left; vertical-align: top;">
-					<p class = "responsive-text-section">Wei-Ming Chen<a href = "mailto:tainist@gmail.com" style = "position: relative; left: 1rem; top: 0.2rem;" class = "enlarge"><img style = "width: 70%; overflow: hidden; border-radius: 15%;" src="images/email.jpg"></a></p>
-					<p class = "responsive-text">Research Associate</p>
-					<p class = "responsive-text">Ph.D in Physics, National Taiwan University</p>
-					<p class = "responsive-text">Research interests:
-						<div style="position: relative; left: 1rem; display: inline-block; vertical-align: top;" class = "responsive-text">
-							- Theoretical Physics<br>
-							- Scattering Amplitudes<br>
-							- Field Theory
-						</div>
-					</p>
-					<p class = "responsive-text">Office: PH1005, Physics Building</p>
-				</div>
 			</div>
 		</div>
 
 		<!-- Students -->
 
-		<div style = "position: relative; text-align: center; width: 100vw; margin-top: 3rem;">
-			<div style = "position: relative; margin-top: 3rem;" class = "responsive-text-title">
+		<div style = "position: relative; display: flex; flex-direction: column; align-items: center; margin-top: 3rem;">
+			<div style = "position: relative; text-align: center;" class = "text-title">
 				<strong>
 					Student(s)
 				</strong>
 			</div>
 			
-			<div style = "text-align: center; position: relative; width: 40vw; display: inline-block; margin-top: 3rem;">
-				<img src = "members/Bo-Quan.jpg" style = "position: relative; width: 15vw; overflow: hidden; border-radius: 50%; object-fit: cover; object-position: 0rem 0rem;"><br />
-				<p class = "responsive-text-section">Bo-Quan Chen<a href = "mailto:ipochaun@gmail.com" style = "position: relative; left: 1rem; top: 0.2rem;" class = "enlarge"><img style = "width: 70%; overflow: hidden; border-radius: 15%;" src="images/email.jpg"></a></p>
-				<p class = "responsive-text">Master's Student</p>
-				<p class = "responsive-text-tiny">Office: PH5007, Physics Building</p>
+			<div style = "margin-top: 3rem; display: flex; flex-wrap: wrap; gap: 4rem; max-width: 90vw; justify-content: center;">
+
+				<!-- Bo-Quan -->
+				<div style = "text-align: center;">
+					<img src = "members/Bo-Quan.jpg" style = "position: relative; width: 20rem; overflow: hidden; border-radius: 50%; object-fit: cover; object-position: 0rem 0rem;"><br />
+					<p class = "text-section">Bo-Quan Chen<a href = "mailto:ipochaun@gmail.com" style = "position: relative; left: 1rem; top: 0.2rem;" class = "enlarge"><img style = "width: 70%; overflow: hidden; border-radius: 15%;" src="images/email.jpg"></a></p>
+					<p class = "text">Master's Student</p>
+					<p class = "text-tiny">Office: PH5007, Physics Building</p>
+				</div>
 			</div>
 		</div>
 
 		<!-- Alumni -->
 
-		<div style = "position: relative; text-align: center; width: 100vw; margin-top: 3rem;">
+		<div style = "position: relative; display: flex; flex-direction: column; align-items: center; margin-top: 3rem;">
 			<div>
-				<p style = "position: relative; top: 3rem;" class = "responsive-text-title">
+				<p style = "position: relative; text-align: center;" class = "text-title">
 					<strong>
 						Student Alumnus
 					</strong>
 				</p>
 			</div>
 			
-			<div style = "text-align: center; position: relative; width: 40vw; display: inline-block; margin-top: 3rem;">
-				<img src = "members/Yen-Ting.jpg" style = "position: relative; width: 15vw; overflow: hidden; border-radius: 50%; object-fit: cover; object-position: 0rem 0rem;">
-				<p class = "responsive-text-section">Yen-Ting Lin<a href = "mailto:tim52517@gmail.com" style = "position: relative; left: 1rem; top: 0.2rem;" class = "enlarge"><img style = "width: 70%; overflow: hidden; border-radius: 15%;" src="images/email.jpg"></a></p>
-				<p class = "responsive-text">Master's Graduate</p>
+			<div style = "margin-top: 3rem; display: flex; flex-wrap: wrap; gap: 4rem; max-width: 90vw; justify-content: center;">
+
+				<!-- Yen-Tin -->
+				<div style = "text-align: center;">
+					<img src = "members/Yen-Ting.jpg" style = "position: relative; width: 20rem; overflow: hidden; border-radius: 50%; object-fit: cover; object-position: 0rem 0rem;">
+					<p class = "text-section">Yen-Ting Lin<a href = "mailto:tim52517@gmail.com" style = "position: relative; left: 1rem; top: 0.2rem;" class = "enlarge"><img style = "width: 70%; overflow: hidden; border-radius: 15%;" src="images/email.jpg"></a></p>
+					<p class = "text">Master's Graduate (2024)</p>
+				</div>
+
 			</div>
 		</div>
 

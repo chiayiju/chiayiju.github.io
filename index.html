@@ -16,6 +16,7 @@
 
 		<script src = "header-component.js" defer></script>
 		<script src = "footer-component.js" defer></script>
+		<script src = "menu.js" defer></script>
 
 		<style>
 			.enLarge {
@@ -26,6 +27,17 @@
 			.enLarge:hover {
 				transform: scale(2);
 			}
+
+			.responsive-box {
+				position: relative;
+				width: 35vw; /* Default for desktops/laptops */
+			}
+
+			@media (max-width: 1280px) {
+				.responsive-box {
+					width: 90vw; /* Applies on smaller screens like phones */
+				}
+			}
 		</style>
 	</head>
 
@@ -34,26 +46,26 @@
 
 		<script src = "toggletheme.js"></script>
 		
-		<div style = "text-align: center; margin-top: clamp(4rem, 12vw, 8rem);">
-			<div style = "position: relative; width: 35vw; display: inline-block;">
-				<p style = "text-align: left; text-align: center; font-size: clamp(30px, 6vw, 60px); font-weight: bold;">
+		<div style = "display: flex; justify-content: center; align-items: center; margin-top: 3rem;">
+			<div class = "responsive-box">
+				<p style = "text-align: left; text-align: center; font-size: clamp(1rem, 10vw, 5rem); font-weight: bold;">
 					Formal Theory<br>
 					Research Group
 				</p>
 
-				<p style = "position: relative; text-align: left; font-size: clamp(15px, 3vw, 30px); margin-top: clamp(1.5rem, 5vw, 3rem);">
+				<p style = "text-align: left; margin-top: 3rem; font-size: clamp(0.5rem, 5vw, 2rem);">
 					The <strong> Formal Theory Research Group </strong> at <strong> National Sun Yat-sen University </strong> aims to tackle various problems in theoretical physics with mathematical and geometrical tools.
 				</p>
 			</div>
 
-			<div style="position: relative; width: 35vw; left: 3rem; display: inline-block;">
-				<img src = "images/desk.jpg" alt = "Formal Theory Research" style = "width: clamp(3rem, 30vw, 30rem); left: clamp(2rem, 4vw, 4rem); -webkit-mask-image: radial-gradient(circle, black 40%, transparent 70%);">
+			<div style = "width: 25vw; margin-left: 6vw;" class = "removable-box">
+				<img src = "images/desk.jpg" alt = "Formal Theory Research" style = "width: 25vw; -webkit-mask-image: radial-gradient(circle, black 40%, transparent 70%);">
 			</div>
 		</div>
 
-		<div style = "text-align: center;">
-			<p style = "text-align: left; font-size: clamp(10px, 2vw, 20px); width: 60vw;" class = "enlarge">
-			 Our research group is mainly interested in the mathematical structures in physics. We explore varied areas in theoretical physics, from quantum formalism and superstring theories to quantum information and computing. Specifically, we study the geometrical structures in these fields, aiming to deepen our understanding of theoretical physics and translate it into practical applications.
+		<div style = "text-align: center; margin-top: 3rem;">
+			<p style = "text-align: left; width: 70vw; font-size: clamp(0.4rem, 4vw, 1.5rem);" class = "enlarge">
+			Our research group is mainly interested in the mathematical structures in physics. We explore varied areas in theoretical physics, from quantum formalism and superstring theories to quantum information and computing. Specifically, we study the geometrical structures in these fields, aiming to deepen our understanding of theoretical physics and translate it into practical applications.
 			</p>
 		</div>
 

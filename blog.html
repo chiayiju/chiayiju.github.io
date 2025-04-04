@@ -31,6 +31,7 @@
 
 		<script src = "header-component.js" defer></script>
 		<script src = "footer-component.js" defer></script>
+		<script src = "menu.js" defer></script>
 	</head>
 	
 	<body>
@@ -38,18 +39,18 @@
 
 		<script src = "toggletheme.js"></script>
 		
-		<div style = "position: relative; top: 10%; left: 5%;" class = "responsive-text">
+		<div style = "position: relative; margin: 1rem 4.5vw;" class = "text">
 			Show category:<br />
-			<select id = "filter" onchange = "FilterTable()" class = "responsive-text">
+			<select id = "filter" onchange = "FilterTable()" class = "text">
 				<option value = "All">All</option>
 				<option value = "PopSci">Popular Science</option>
 				<option value = "Research">Research Related</option>
 				<option value = "Course">Course Related</option>
 			</select>
 
-			<div id = "courseDiv" style = "display: none; position: relative; margin-top: 1%;">
+			<div id = "courseDiv" style = "display: none; position: relative; margin-top: 0.5rem;">
 				Course name: <br />
-				<select id = "coursefilter" onchange = "CourseFilterTable()" class = "responsive-text">
+				<select id = "coursefilter" onchange = "CourseFilterTable()" class = "text">
 					<option value = "All">All</option>
 					<option value = "QuantumPhysics">Quantum Physics</option>
 					<option value = "TheoreticalPhysics2025">Theoretical Physics 2025</option>
@@ -57,7 +58,7 @@
 			</div>
 		</div>
 
-		<table style = "position: relative; width: 90%; margin-top: 2%; text-align: center;" border = "5" class = "responsive-text">
+		<table style = "position: relative; width: 90vw; margin-top: 1rem; text-align: center;" border = "5" class = "text">
 			<thead>
 				<tr>
 					<th style = "width: 60%">Article Title</th>

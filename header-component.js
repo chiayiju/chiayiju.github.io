@@ -4,23 +4,27 @@ class HeaderComponent extends HTMLElement {
 			<style>
 				body {
 					display: none;
-					padding-bottom: 2rem;
+					padding-bottom: 1.25rem;
 				}
 
-				.responsive-text-tiny {
-					font-size: clamp(10px, 2vw, 20px);
+				header {
+					position: relative;
 				}
 
-				.responsive-text {
-					font-size: clamp(12.5px, 2.5vw, 25px);
+				.text-tiny {
+					font-size: 1.25rem;
 				}
 
-				.responsive-text-section {
-					font-size: clamp(15px, 3vw, 30px);
+				.text {
+					font-size: 1.5rem;
 				}
 
-				.responsive-text-title {
-					font-size: clamp(20px, 4vw, 40px);
+				.text-section {
+					font-size: 2rem;
+				}
+
+				.text-title {
+					font-size: 2.5rem;
 				}
 
 				.enlarge {
@@ -31,23 +35,100 @@ class HeaderComponent extends HTMLElement {
 				.enlarge:hover {
 					transform: scale(1.3);
 				}
+
+				.flex-row {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+
+				.flex-row > div:first-child {
+					text-align: left;
+				}
+
+				.flex-row > div:last-child {
+					text-align: right;
+				}
+
+				/* Default */
+				nav#main-nav {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: flex-end;
+					gap: 6rem;
+				}
+
+				.nav-link {
+					font-size: 2rem;
+				}
+
+				/* Hide the hamburger by default */
+				#menu-toggle {
+					position: absolute;
+					top: 1rem;
+					right: 1rem;
+					font-size: 1.8rem;
+					background: none;
+					border: none;
+					cursor: pointer;
+					display: none;
+				}
+
+				/* Mobile styles */
+				@media (max-width: 1280px) {
+					#menu-toggle {
+						display: block;
+						position: relative;
+					}
+
+					nav#main-nav {
+						display: none;
+						flex-direction: column;
+						align-items: flex-start;
+						padding: 1rem 1rem;
+						border-radius: 0.8rem;
+						position: absolute;
+						top: 8rem;
+						right: 1rem;
+						z-index: 1000;
+						box-shadow: 0 4rem 8rem rgba(255, 255, 255, 0.2);
+					}
+
+					nav#main-nav.show {
+						display: flex;
+					}
+
+					.nav-link {
+						font-size: 1.5rem;
+						margin-top: -3rem;
+					}
+
+					.removable-box{
+						display: none;
+					}
+				}
 			</style>
 
 			<header>
-				<h1><a href = "index.html" style = "margin-left: clamp(1rem, 3vw, 4rem); position: relative; top:0px;"><img id = "logo" src = "images/logo-light.webp" alt = "Formal Theory" style = "width: clamp(50px, 7.2vw, 700px);" class = "enlarge"></a></h1>
-				<div style = "position: relative; margin-top: -4rem;">
-					<h2>
-						<nav style = "text-align: right; margin-right: clamp(2rem, 3vw, 4rem);">
-							<a href = "index.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">Home</a>
-							<a href = "members.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">Members</a>
-							<a href = "publications.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">Publications</a>
-							<a href = "blog.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">Blog</a>
-							<a href = "students.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">For Students</a>
-							<a href = "links.html" style = "margin-right: clamp(0.5rem, 3vw, 4rem); font-size: clamp(10px, 2.5vw, 25px);" class = "enlarge">Links</a>
-
-							<button id = "theme-toggle" style = "width: clamp(1rem, 5vw, 2rem); height: clamp(1rem, 5vw, 2rem); border-radius: 50%; border: none; font-size: clamp(10px, 2vw, 20px); cursor: pointer; position: absolute; margin-top: -0.4rem; text-align: center; background-color: #f5f5f5; color: #333;" onclick = "toggleTheme()" class = "enlarge">&#9728;</button>
+				<div style = "margin: 1rem 2rem;" class = "flex-row">
+					<div>
+						<a href = "index.html">
+							<img id = "logo" src = "images/logo-light.webp" alt = "Formal Theory" style = "width: 8rem;" class = "enlarge">
+						</a>
+					</div>
+					<div>
+						<button id = "menu-toggle" style = "font-size: 1.5rem; margin-top: -2.5rem; border: 0.2rem solid; padding: 0.25rem 0.5rem; border-radius: 0.6rem; cursor: pointer;">☰</button>
+					</div>
+					<div style = "display: flex; align-items: center; gap: 6rem;">
+						<nav id = "main-nav">
+							<a href = "members.html" class = "nav-link enlarge">Members</a>
+							<a href = "publications.html" class = "nav-link enlarge">Publications</a>
+							<a href = "blog.html" class = "nav-link enlarge">Blog</a>
+							<a href = "students.html" class = "nav-link enlarge">For Students</a>
+							<a href = "links.html" class = "nav-link enlarge">Links</a>
 						</nav>
-					</h2>
+						<button id = "theme-toggle" style = "width: 2rem; height: 2rem; border-radius: 50%; border: none; font-size: 1.5rem; cursor: pointer; background-color: #f5f5f5; color: #333;" onclick = "toggleTheme()" class = "enlarge">&#9728;</button>
+					</div>
 				</div>
 			</header>
 		`;
