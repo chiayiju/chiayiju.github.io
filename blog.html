@@ -62,7 +62,7 @@
 			<thead>
 				<tr>
 					<th>Article Title</th>
-					<th style = "cursor: pointer;" onclick = "sortByDate()">Posted Date ⬍</th>
+					<th style = "cursor: pointer;" onclick = "sortByDate()">Posted Date<span id = "sort-arrow"> ⬍</span></th>
 					<th >Category</th>
 				</tr>
 			</thead>
@@ -78,7 +78,7 @@
 						Apr. 1, 2025
 						</td>
 					<td>
-						Course Related
+						- Course Related
 					</td>
 				</tr>
 
@@ -91,10 +91,11 @@
 						Mar. 31, 2025
 					</td>
 					<td>
-						Popular Science<br />
-						Course Related
+						- Popular Science<br />
+						- Course Related
 					</td>
 				</tr>
+
 			</tbody>
 		</table>
 
@@ -102,20 +103,23 @@
 			let isAscending = false;
 
 			function sortByDate() {
-				const table = document.getElementById("articleTable");
-				const tbody = table.querySelector("tbody");
-				const rows = Array.from(tbody.querySelectorAll("tr"));
+			const table = document.getElementById("articleTable");
+			const tbody = table.querySelector("tbody");
+			const rows = Array.from(tbody.querySelectorAll("tr"));
+			const sortArrow = document.getElementById("sort-arrow");
 
-				rows.sort((a, b) => {
-					const dateA = new Date(a.children[1].dataset.date);
-					const dateB = new Date(b.children[1].dataset.date);
-					return isAscending ? dateA - dateB : dateB - dateA;
-				});
+			isAscending = !isAscending;
 
-				isAscending = !isAscending;
+			rows.sort((a, b) => {
+				const dateA = new Date(a.children[1].dataset.date);
+				const dateB = new Date(b.children[1].dataset.date);
+				return isAscending ? dateA - dateB : dateB - dateA;
+			});
 
-				rows.forEach(row => tbody.appendChild(row));
-			}
+			sortArrow.textContent = isAscending ? " ⬇" : " ⬆";
+
+			rows.forEach(row => tbody.appendChild(row));
+		}
 		</script>
 
 		<script>
