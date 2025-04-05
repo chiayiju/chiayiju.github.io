@@ -31,7 +31,6 @@ class HeaderComponent extends HTMLElement {
 
 				/* Default Screen */
 					body {
-						display: none;
 						padding-bottom: 1.25rem;
 					}
 
@@ -76,7 +75,7 @@ class HeaderComponent extends HTMLElement {
 				/* Mobile styles */
 				@media (max-width: 1280px) {
 					body {
-						display: none;
+						padding-bottom: 0rem;
 					}
 
 					.text-tiny {
