@@ -146,7 +146,7 @@ class HeaderComponent extends HTMLElement {
 							<a id = "students" href = "students.html" class = "nav-link enlarge">For Students</a>
 							<a id = "links" href = "links.html" class = "nav-link enlarge">Links</a>
 						</nav>
-						<button id = "theme-toggle" style = "width: 2rem; height: 2rem; border-radius: 50%; border: none; font-size: 1.5rem; cursor: pointer; background-color: #f5f5f5; color: #333;" onclick = "toggleTheme()" class = "enlarge">&#9728;</button>
+						<button id = "theme-toggle" style = "width: 2rem; height: 2rem; border-radius: 50%; border: none; font-size: 1.5rem; cursor: pointer; background-color: #f5f5f5; color: #333;" onclick = "toggleTheme(true)" class = "enlarge">&#9728;</button>
 					</div>
 				</div>
 			</header>
