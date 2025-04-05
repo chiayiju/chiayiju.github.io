@@ -23,9 +23,10 @@ function toggleTheme() {
 
 	const navmenu = document.getElementById("main-nav");
 	if (navmenu) {
-		navmenu.style.backgroundColor = newTheme === "dark" ? 'rgba(50, 50, 50, 1)' : 'rgba(240, 240, 240, 1)';
+		navmenu.style.backgroundColor = newTheme === "dark" ? 'black' : 'white';
 		navmenu.style.color = newTheme === "dark" ? 'white' : 'black';
 		if (window.innerWidth < 1280) {
+			navmenu.style.backgroundColor = newTheme === "dark" ? 'rgba(50, 50, 50, 1)' : 'rgba(240, 240, 240, 1)';
 			navmenu.style.boxShadow = newTheme === "dark" ? '0 4rem 8rem rgba(100, 10, 10, 0.6)' : '0 4rem 8rem rgba(10, 100, 10, 0.2)';
 		} else {
 			navmenu.style.boxShadow = 'none';
