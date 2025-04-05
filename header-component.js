@@ -1,3 +1,5 @@
+let parent = true;
+
 class HeaderComponent extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
@@ -129,7 +131,7 @@ class HeaderComponent extends HTMLElement {
 			<header>
 				<div style = "margin: 1rem 2rem;" class = "flex-row">
 					<div>
-						<a href = "index.html">
+						<a id = "index" href = "index.html">
 							<img id = "logo" src = "images/logo-light.webp" alt = "Formal Theory" style = "width: 8rem;" class = "enlarge">
 						</a>
 					</div>
@@ -138,11 +140,11 @@ class HeaderComponent extends HTMLElement {
 					</div>
 					<div style = "display: flex; align-items: center; gap: 6rem;">
 						<nav id = "main-nav">
-							<a href = "members.html" class = "nav-link enlarge">Members</a>
-							<a href = "publications.html" class = "nav-link enlarge">Publications</a>
-							<a href = "blog.html" class = "nav-link enlarge">Blog</a>
-							<a href = "students.html" class = "nav-link enlarge">For Students</a>
-							<a href = "links.html" class = "nav-link enlarge">Links</a>
+							<a id = "members" href = "members.html" class = "nav-link enlarge">Members</a>
+							<a id = "publications" href = "publications.html" class = "nav-link enlarge">Publications</a>
+							<a id = "blog" href = "blog.html" class = "nav-link enlarge">Blog</a>
+							<a id = "students" href = "students.html" class = "nav-link enlarge">For Students</a>
+							<a id = "links" href = "links.html" class = "nav-link enlarge">Links</a>
 						</nav>
 						<button id = "theme-toggle" style = "width: 2rem; height: 2rem; border-radius: 50%; border: none; font-size: 1.5rem; cursor: pointer; background-color: #f5f5f5; color: #333;" onclick = "toggleTheme()" class = "enlarge">&#9728;</button>
 					</div>

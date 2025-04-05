@@ -6,7 +6,11 @@ function toggleTheme() {
 
 	const logo = document.getElementById("logo");
 	if (logo) {
-		logo.src = newTheme === "dark" ? "images/logo-dark.webp" : "images/logo-light.webp";
+		if (parent) {
+			logo.src = newTheme === "dark" ? "images/logo-dark.webp" : "images/logo-light.webp";
+		} else {
+			logo.src = newTheme === "dark" ? "../images/logo-dark.webp" : "../images/logo-light.webp";
+		}
 	}
 
 	const toggleButton = document.getElementById("theme-toggle");

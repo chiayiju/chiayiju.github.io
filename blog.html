@@ -27,18 +27,17 @@
 
 		<link rel = "stylesheet" href = "styles.css">
 
-		<script src = "main.js"></script>
-
-		<script src = "header-component.js"></script>
-		<script src = "footer-component.js"></script>
+		<script src = "main.js" defer></script>
+		<script src = "header-component.js" defer></script>
+		<script src = "footer-component.js" defer></script>
 		<script src = "menu.js" defer></script>
+		<script src = "toggletheme.js" defer></script>
+		
 	</head>
 	
 	<body style = "display: none;">
 		<header-component></header-component>
 
-		<script src = "toggletheme.js"></script>
-		
 		<div style = "position: relative; margin: 1rem 4.5vw;" class = "text">
 			Show category:<br />
 			<select id = "filter" onchange = "FilterTable()" class = "text">

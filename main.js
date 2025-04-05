@@ -5,7 +5,11 @@
 	document.addEventListener("DOMContentLoaded", function() {
 		const logo = document.getElementById("logo");
 		if (logo) {
-			logo.src = theme === "dark" ? "images/logo-dark.webp" : "images/logo-light.webp";
+			if (parent) {
+				logo.src = theme === "dark" ? "images/logo-dark.webp" : "images/logo-light.webp";
+			} else {
+				logo.src = theme === "dark" ? "../images/logo-dark.webp" : "../images/logo-light.webp";
+			}
 		}
 
 		const toggleButton = document.getElementById("theme-toggle");
@@ -53,6 +57,6 @@
 			color.style.color = theme === "dark" ? '#66ccff' : '#1a0dab';
 		});
 
-		document.body.style.display = "block"; // Show body after setting the theme
+		document.body.style.display = "block";
 	});
 })();
