@@ -73,7 +73,7 @@ class HeaderComponent extends HTMLElement {
 					}
 
 				/* Mobile styles */
-				@media (max-width: 1280px) {
+				@media (max-width: 1370px) {
 					body {
 						padding-bottom: 0rem;
 					}
