@@ -105,7 +105,7 @@ class HeaderComponent extends HTMLElement {
 						padding: 1rem 2rem;
 						border-radius: 0.8rem;
 						position: absolute;
-						top: 5rem;
+						top: 4rem;
 						right: 1rem;
 						z-index: 1000;
 						gap: 0rem;
