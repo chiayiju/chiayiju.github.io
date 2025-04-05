@@ -31,7 +31,7 @@ class HeaderComponent extends HTMLElement {
 
 				/* Default Screen */
 					body {
-						padding-bottom: 1.25rem;
+						padding-bottom: 2rem;
 					}
 
 					.text-tiny {
@@ -102,13 +102,13 @@ class HeaderComponent extends HTMLElement {
 						display: none;
 						flex-direction: column;
 						align-items: flex-start;
-						padding: 1rem 1rem;
+						padding: 1rem 2rem;
 						border-radius: 0.8rem;
 						position: absolute;
 						top: 8rem;
 						right: 1rem;
 						z-index: 1000;
-						box-shadow: 0 4rem 8rem rgba(255, 255, 255, 0.2);
+						gap: 0rem;
 					}
 
 					nav#main-nav.show {
@@ -117,7 +117,7 @@ class HeaderComponent extends HTMLElement {
 
 					.nav-link {
 						font-size: 1.5rem;
-						margin-top: -3rem;
+						line-height: 2;
 					}
 
 					.removable-box{
