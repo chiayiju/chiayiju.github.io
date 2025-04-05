@@ -39,9 +39,14 @@
 
 		<script src = "toggletheme.js"></script>
 
-		<p style = "text-align: right; margin-right: 10vw; margin-top: 3rem;" class = "text-tiny">
-			Posted: April 1, 2025
-		</p>
+		<div style="display: flex; justify-content: flex-end; margin-top: 3rem;">
+			<div style="width: fit-content; margin-right: 10vw;">
+				<p style = "text-align: left;" class = "text-tiny">
+					Posted: April 1, 2025<br />
+					(Last edited: April 5, 2025)
+				</p>
+			</div>
+		</div>
 
 		<p style = "text-align: center;" class = "text-title"> The General Solution of a Classical Closed String </p>
 		
@@ -60,7 +65,7 @@
 			\[X(\tau, \sigma + \pi) = X(\tau, \sigma),\]
 			the string is considered closed. <br /><br />
 
-			A known solution is known to the equation of motion under this condition is
+			The general solution to the equation of motion under this condition is
 			\[
 				X(\tau, \sigma) = x + \ell_\text{s}^2 p \tau + i \ell_\text{s} \sum_{n \neq 0} \frac{1}{2 n} \left[a_n e^{-2 i n (\tau + \sigma)} + b_n e^{-2 i n (\tau - \sigma)}\right],
 			\]
@@ -79,14 +84,19 @@
 			\]
 
 			Therefore, with a slight abuse of notation, the equation of motion becomes
-			\[
-				0 = - \frac{\partial^2}{\partial \tau^2} X + \frac{\partial^2}{\partial \sigma^2} X = - \left(\dfrac{\partial}{\partial \sigma^+} + \dfrac{\partial}{\partial \sigma^-}\right)^2 X + \left(\dfrac{\partial}{\partial \sigma^+} - \dfrac{\partial}{\partial \sigma^-}\right)^2 X = - 4 \dfrac{\partial}{\partial \sigma^+} \dfrac{\partial}{\partial \sigma^-} X.
-			\]
+			\begin{align*}
+				0 & = - \frac{\partial^2}{\partial \tau^2} X + \frac{\partial^2}{\partial \sigma^2} X\\
+				& = - \left(\dfrac{\partial}{\partial \sigma^+} + \dfrac{\partial}{\partial \sigma^-}\right)^2 X + \left(\dfrac{\partial}{\partial \sigma^+} - \dfrac{\partial}{\partial \sigma^-}\right)^2 X\\
+				& = - 4 \dfrac{\partial}{\partial \sigma^+} \dfrac{\partial}{\partial \sigma^-} X.
+			\end{align*}
 
 			We can solve for \(X\) by integrating both sides over \(\sigma^+\) and \(\sigma^-\), i.e.,
-			\[
-				X = \int d\sigma^+ d\sigma^- \dfrac{\partial}{\partial \sigma^+} \dfrac{\partial}{\partial \sigma^-} X = \int d\sigma^+ d\sigma^- 0 = \int d\sigma^+ F(\sigma^+) = X_\text{L}(\sigma^+) + X_\text{R}(\sigma^-),
-			\]
+			\begin{align*}
+				X & = \int d\sigma^+ d\sigma^- \dfrac{\partial}{\partial \sigma^+} \dfrac{\partial}{\partial \sigma^-} X\\
+				& = \int d\sigma^+ d\sigma^- 0\\
+				& = \int d\sigma^+ F(\sigma^+)\\
+				& = X_\text{L}(\sigma^+) + X_\text{R}(\sigma^-),
+			\end{align*}
 			where \(F(\sigma^+) = \dfrac{\partial}{\partial \sigma^+} X_\text{L}(\sigma^+)\), and \(X_\text{L}(\sigma^+)\) and \(X_\text{R}(\sigma^-)\) are arbitrary functions of \(\sigma^+\) and \(\sigma^-\), respectively. The subscript L and R stand for left-moving and right-moving modes. <br /><br />
 
 			Hence,
@@ -94,7 +104,7 @@
 				X(\tau, \sigma) = X_\text{L}(\sigma^+) + X_\text{R}(\sigma^-) = X_\text{L}(\tau + \sigma) + X_\text{R}(\tau - \sigma).
 			\]
 
-			Next, we impose the periodic condition \(X(\tau, \sigma + \pi) = X(\tau, \sigma),\), which leads to
+			Next, we impose the periodic condition \(X(\tau, \sigma + \pi) = X(\tau, \sigma)\), which leads to
 			\begin{align*}
 				& X_\text{L}(\tau + \sigma + \pi) + X_\text{R}(\tau - \sigma - \pi) = X_\text{L}(\tau + \sigma) + X_\text{R}(\tau - \sigma)\\
 				\Rightarrow ~ & X_\text{L}(\sigma^+ + \pi) + X_\text{R}(\sigma^- - \pi) = X_\text{L}(\sigma^+) + X_\text{R}(\sigma^-).
@@ -184,7 +194,7 @@
 				\left\{
 				\begin{array}{ll}
 					\displaystyle \xi = \frac{\ell_\text{s}^2 p}{\pi}\\
-					\alpha_0 = x - \beta_0\\
+					\alpha_0 + \beta_0 = x\\
 					\displaystyle \alpha_n = \frac{i \ell_\text{s}}{2 n} a_n & \text{(for \(n \neq 0\))}\\
 					\displaystyle \beta_n = \frac{i \ell_\text{s}}{2 n} b_n & \text{(for \(n \neq 0\))}
 				\end{array}
