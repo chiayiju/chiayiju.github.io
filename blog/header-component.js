@@ -129,7 +129,7 @@ class HeaderComponent extends HTMLElement {
 			<header>
 				<div style = "margin: 1rem 2rem;" class = "flex-row">
 					<div>
-						<a href = "index.html">
+						<a href = "../index.html">
 							<img id = "logo" src = "../images/logo-light.webp" alt = "Formal Theory" style = "width: 8rem;" class = "enlarge">
 						</a>
 					</div>
