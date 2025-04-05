@@ -15,6 +15,44 @@
 		<script src = "header-component.js"></script>
 		<script src = "footer-component.js"></script>
 		<script src = "menu.js" defer></script>
+
+		<style>
+			.enLarge {
+				display: inline-block;
+				transition: transform 1s ease;
+			}
+
+			.enLarge:hover {
+				transform: scale(2);
+			}
+
+			.responsive-box {
+				position: relative;
+				display: inline-block;
+				width: 40vw;
+				text-align: center;
+			}
+
+			.responsive-box2 {
+				position: relative;
+				width: 45vw;
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			@media (max-width: 1280px) {
+				.responsive-box {
+					width: 90vw;
+				}
+
+				.responsive-box2 {
+					position: relative;
+					width: 90vw;
+					display: inline-block;
+					margin: 1rem 5vw;
+				}
+			}
+		</style>
 	</head>
 	
 	<body style = "display: none;">
@@ -22,12 +60,12 @@
 
 		<script src = "toggletheme.js"></script>
 		
-		<div style = "position: fixed; text-align: center; width: 40vw; display: inline-block;">
+		<div class = "responsive-box">
 			<img src = "members/Chia-Yi.jpg" style = "width: 30%; height: 35%; overflow: hidden; border-radius: 10%; object-fit: cover;"><br>
 
 			<p style = "font-weight: bold;" class = "text-title">Chia-Yi Ju</p>
 
-			<p style = "color: gray;" class = "text-section">Assistant Professor</p>
+			<p class = "text-section">Assistant Professor</p>
 
 			<p class = "text-tiny">Ph.D., Stony Brook University</p>
 
@@ -52,7 +90,7 @@
 			</div>
 		</div>
 
-		<div style = "position: relative; left: 45vw; width: 45vw; display: inline-block; vertical-align: top;" class = "box">
+		<div class = "responsive-box2">
 			<div style = "position: relative; line-height: 1.3;" class = "text">
 				Dr. Chia-Yi Ju recieved his Ph.D. degree in 2016 from Stony Brook University for his study on the superspace approach to supersymmetric quantum field theories and the unification of superstring theories and M-theory in the low energy limit.<br><br>
 
@@ -63,11 +101,13 @@
 
 			<div style = "position: relative; margin-top: 3rem; text-align: left; line-height: 1.5;" class = "text">
 				<strong>Research interests:</strong><br>
-				- Quantum Formalism<br>
-				- Non-Hermitian Quantum Physics<br>
-				- Superstring Theories<br>
-				- Supersymmetric Field Theories<br>
-				- Quantum Information
+				<div style="position: relative; left: 1rem; display: inline-block;" class = "text">
+					- Quantum Formalism<br />
+					- Non-Hermitian Quantum Physics<br />
+					- String Theories<br />
+					- Supersymmetric Field Theories<br />
+					- Quantum Information
+				</div>
 			</div>
 		</div>
 
