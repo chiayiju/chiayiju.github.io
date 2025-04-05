@@ -2,19 +2,19 @@ function toggleTheme(isToggle = false) {
 	let theme;
 
 	if (isToggle) {
-	const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-	theme = currentTheme === 'dark' ? 'light' : 'dark';
-	document.documentElement.setAttribute('data-theme', theme);
-	localStorage.setItem('theme', theme);
+		const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+		theme = currentTheme === 'dark' ? 'light' : 'dark';
+		document.documentElement.setAttribute('data-theme', theme);
+		localStorage.setItem('theme', theme);
 	} else {
-	theme = localStorage.getItem('theme') || 'dark';
-	document.documentElement.setAttribute('data-theme', theme);
+		theme = localStorage.getItem('theme') || 'dark';
+		document.documentElement.setAttribute('data-theme', theme);
 	}
 
 	const logo = document.getElementById("logo");
 	if (logo) {
-	const path = parent ? "images/" : "../images/";
-	logo.src = theme === "dark" ? path + "logo-dark.webp" : path + "logo-light.webp";
+		const path = parent ? "images/" : "../images/";
+		logo.src = theme === "dark" ? path + "logo-dark.webp" : path + "logo-light.webp";
 	}
 
 	const toggleButton = document.getElementById("theme-toggle");
@@ -34,8 +34,8 @@ function toggleTheme(isToggle = false) {
 		navmenu.style.backgroundColor = theme === "dark" ? 'black' : 'white';
 		navmenu.style.color = theme === "dark" ? 'white' : 'black';
 		if (window.innerWidth < 1280) {
-			navmenu.style.backgroundColor = theme === "dark" ? 'rgba(50, 50, 50, 1)' : 'rgba(240, 240, 240, 1)';
-			navmenu.style.boxShadow = theme === "dark" ? '0 4rem 8rem rgba(100, 10, 10, 0.6)' : '0 4rem 8rem rgba(10, 100, 10, 0.2)';
+			navmenu.style.backgroundColor = theme === "dark" ? 'rgba(50, 50, 60, 0.95)' : 'rgba(250, 250, 240, 0.95)';
+			navmenu.style.boxShadow = theme === "dark" ? '0 4rem 8rem rgba(10, 10, 100, 0.6)' : '0 4rem 8rem rgba(100, 100, 10, 0.2)';
 		} else {
 			navmenu.style.boxShadow = 'none';
 		}
@@ -62,9 +62,11 @@ function toggleTheme(isToggle = false) {
 		color.style.color = theme === "dark" ? '#66ccff' : '#1a0dab';
 	});
 
+	if (!isToggle) {
 		document.body.style.display = "block";
+	}
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    toggleTheme(false);
+	toggleTheme(false);
 });
