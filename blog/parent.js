@@ -31,5 +31,7 @@
 		if (links){
 			links.href = "../links.html";
 		}
+
+		document.body.style.paddingBottom = "3rem";
 	});
 })();

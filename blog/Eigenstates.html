@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<title>Formal Theory Research Group</title>
+		<link rel = "icon" type = "image/x-icon" href = "../images/icon.png">
+
+		<link rel="stylesheet" href = "../styles.css">
+
+		<style>
+			.mjx-container {
+				font-size: 1.5rem;
+			}
+			@media (max-width: 1380px) {
+				.mjx-container {
+					font-size: 1rem;
+				}
+			}
+		</style>
+
+		<script src = "../toggletheme.js" defer></script>
+		<script src = "../header-component.js" defer></script>
+		<script src = "../footer-component.js" defer></script>
+		<script src = "../menu.js" defer></script>
+		<script src = "parent.js" defer></script>
+
+		<script>
+			MathJax = {
+				tex: {
+					tags: 'ams'
+				}
+			};
+		</script>
+		<script type = "text/javascript" id = "MathJax-script" async src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+
+	<body style = "display: none;">
+		<header-component></header-component>
+
+		<div style="display: flex; justify-content: flex-end; margin-top: 3rem;">
+			<div style="width: fit-content; margin-right: 10vw;">
+				<p style = "text-align: left;" class = "text-tiny">
+					Posted: Month Date, Year
+				</p>
+			</div>
+		</div>
+
+		<p style = "text-align: center;" class = "text-title">Eigenvalue, Left-Eigenvector, and Right-Eigenvector</p>
+		
+		<div style = "position: relative; margin-left:5vw; max-width: 90vw; line-height: 1.2;" class = "text">
+			
+			Since you found this article, I presume you already know that eigenvalues and eigenvectors (or eigenstates) are essential in quantum mechanics. I also assume you know how to find the eigenvalues and their corresponding eigenstates. But you might not know (or may not have noticed) that there are actually two kinds of eigenvectors — left-eigenvectors and right-eigenvectors. In fact, you're probably already quite familiar with them, but you just didn't pay much attention. The main motivation for writing this post is simply to point them out for future reference.
+
+			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "text-section">Eigenvalues</p>
+
+				Let \(M\) be an \(n \times n\) matrix. A scalar \(m\) is called an eigenvalues of \(M\) if there exists a nonzero column vector \(v\) such that
+				\begin{align}
+					M v = m v. \label{EigenvalueEq}
+				\end{align}
+				
+				To obtain a nonzero solution to Eq. (\ref{EigenvalueEq}), the possible choice sof \(m\) are limited. To see this, we rearrange Eq. (\ref{EigenvalueEq}) as
+				\[
+					\mathbf{0} = M v - m v = (M - m \mathbb{1}) v,
+				\]
+				where \(\mathbf{0}\) is a column vector with all entries equal to zero. If \((M - m \mathbb{1})\) is invertible, then
+				\begin{align*}
+					& v = (M - m \mathbb{1})^{-1} \mathbf{0}\\
+					\Rightarrow \quad & v = \mathbf{0}.
+				\end{align*}
+				In other words, \(v\) must be a zero vector unless the inverse of \((M - m \mathbb{1})\) does not exist. Therefore, the allowed values of \(m\) are those that satisfy
+				\begin{align}
+					\det (M - m \mathbb{1}) = 0. \label{DetEq}
+				\end{align}
+				
+				Since Eq. (\ref{DetEq}) is a polynomial of degree \(n\), it has \(n\) solutions. We can therefore label these solutions as \(m_1\), \(m_2\), \(\cdots\), \(m_n\).
+
+			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "text-section">"Eigenvectors"</p>
+
+				For a given eigenvalue there are corresponding solutions to Eq. (\ref{EigenvalueEq}). We, therefore, focus on the solutions a specific eigenvalue \(m_i\). To make the \(m_i\) dependence more explicit, we also label the vector to be determined by \(i\), namely,
+				\[
+					M v_i = m_i v_i.
+				\]
+
+				However, the solution to the is far from being unique. To be more specific, if \(v_i\) is a solution, \(\tilde{v}_i = \alpha v_i\), where \(\alpha\) is a nonzero constant, is also a solution.
+
+		</div>
+		
+		<footer-component></footer-component>
+	</body>
+</html>
