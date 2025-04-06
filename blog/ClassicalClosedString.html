@@ -40,16 +40,6 @@
 				}
 			};
 		</script>
-		<script>
-			document.addEventListener("DOMContentLoaded", () => {
-				document.querySelectorAll(".MathJax_Display").forEach(el => {
-					const wrapper = document.createElement("div");
-					wrapper.className = "math-scroll";
-					el.parentNode.insertBefore(wrapper, el);
-					wrapper.appendChild(el);
-				});
-			});
-		</script>
 		<script type = "text/javascript" id = "MathJax-script" async src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	
@@ -225,5 +215,15 @@
 		</div>
 		
 		<footer-component></footer-component>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				document.querySelectorAll(".MathJax_Display").forEach(el => {
+					const wrapper = document.createElement("div");
+					wrapper.className = "math-scroll";
+					el.parentNode.insertBefore(wrapper, el);
+					wrapper.appendChild(el);
+				});
+			});
+		</script>
 	</body>
 </html>
