@@ -23,6 +23,10 @@
 				padding: 1%;
 				text-align: center;
 			}
+
+			.sticky-row {
+				font-weight: bold;
+			}
 		</style>
 
 		<link rel = "stylesheet" href = "styles.css">
@@ -66,6 +70,18 @@
 			</thead>
 
 			<tbody>
+				<!-- Sticky row -->
+				<!-- <tr class = "sticky-row">
+					<td>
+						<a href = "#">📌 Featured Article</a>
+					</td>
+					<td data-date = "2025-04-10">
+						Apr. 10, 2025
+					</td>
+						<td style = "text-align: left;">
+						Featured
+					</td>
+				</tr> -->
 
 				<!-- Classical Closed String -->
 				<tr class = "Course TheoreticalPhysics2025">
@@ -96,28 +112,32 @@
 
 			</tbody>
 		</table>
-
 		<script>
 			let isAscending = false;
 
 			function sortByDate() {
-			const table = document.getElementById("articleTable");
-			const tbody = table.querySelector("tbody");
-			const rows = Array.from(tbody.querySelectorAll("tr"));
-			const sortArrow = document.getElementById("sort-arrow");
+				const table = document.getElementById("articleTable");
+				const tbody = table.querySelector("tbody");
+				const allRows = Array.from(tbody.querySelectorAll("tr"));
+				const sortArrow = document.getElementById("sort-arrow");
 
-			isAscending = !isAscending;
+				// Separate sticky row(s) from normal rows
+				const stickyRows = allRows.filter(row => row.classList.contains("sticky-row"));
+				const sortableRows = allRows.filter(row => !row.classList.contains("sticky-row"));
 
-			rows.sort((a, b) => {
-				const dateA = new Date(a.children[1].dataset.date);
-				const dateB = new Date(b.children[1].dataset.date);
-				return isAscending ? dateA - dateB : dateB - dateA;
-			});
+				isAscending = !isAscending;
 
-			sortArrow.textContent = isAscending ? " ⬇" : " ⬆";
+				sortableRows.sort((a, b) => {
+					const dateA = new Date(a.children[1].dataset.date);
+					const dateB = new Date(b.children[1].dataset.date);
+					return isAscending ? dateA - dateB : dateB - dateA;
+				});
 
-			rows.forEach(row => tbody.appendChild(row));
-		}
+				sortArrow.textContent = isAscending ? " ⬇" : " ⬆";
+
+				// Re-append sticky row(s) first, then sorted rows
+				[...stickyRows, ...sortableRows].forEach(row => tbody.appendChild(row));
+			}
 		</script>
 
 		<script>

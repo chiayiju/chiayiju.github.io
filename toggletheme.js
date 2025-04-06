@@ -50,6 +50,11 @@ function toggleTheme(isToggle = false) {
 		elements.forEach(el => {
 		el.style.backgroundColor = theme === "dark" ? '#333' : '#f5f5f5';
 	});
+	
+	const stickys = document.querySelectorAll(".sticky-row");
+		stickys.forEach(sticky => {
+		sticky.style.backgroundColor = theme === "dark" ? 'rgb(50, 50, 50)' : 'rgb(200, 200, 200)';
+	});
 
 	const footerBackground = document.getElementById("footer");
 	if (footerBackground) {
