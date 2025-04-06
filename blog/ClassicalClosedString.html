@@ -12,6 +12,14 @@
 			.mjx-container {
 				font-size: 1.5rem;
 			}
+
+			.math-scroll {
+				overflow-x: auto;
+				overflow-y: hidden;
+				max-width: 100%;
+				padding: 0.5rem 0;
+			}
+
 			@media (max-width: 1380px) {
 				.mjx-container {
 					font-size: 1rem;
@@ -52,9 +60,11 @@
 		<div style = "position: relative; margin-left: 5vw; max-width: 90vw; line-height: 1.2;" class = "text">
 			
 			Given the Lagrangian density
-			\[
-				{\cal L} = \frac{1}{2 \pi \ell_\text{s}} \left[\left(\frac{\partial}{\partial \tau} X(\tau, \sigma)\right)^2 + \left(\frac{\partial}{\partial \sigma} X(\tau, \sigma)\right)^2\right],
-			\]
+			<div class = "math-scroll">
+				\[
+					{\cal L} = \frac{1}{2 \pi \ell_\text{s}} \left[\left(\frac{\partial}{\partial \tau} X(\tau, \sigma)\right)^2 + \left(\frac{\partial}{\partial \sigma} X(\tau, \sigma)\right)^2\right],
+				\]
+			</div>
 			where \(\ell_\text{s}\) is a constant that characterizes the typical size of the string, a quick calculation shows that the equation of motion derived from this Lagrangian density is
 			\begin{align}
 				- \frac{\partial^2}{\partial \tau^2} X(\tau, \sigma) + \frac{\partial^2}{\partial \sigma^2} X(\tau, \sigma) = 0. \label{EOM}
@@ -65,9 +75,11 @@
 			the string is considered closed. <br /><br />
 
 			The general solution to the equation of motion under this condition is
-			\[
-				X(\tau, \sigma) = x + \ell_\text{s}^2 p \tau + i \ell_\text{s} \sum_{n \neq 0} \frac{1}{2 n} \left[a_n e^{-2 i n (\tau + \sigma)} + b_n e^{-2 i n (\tau - \sigma)}\right],
-			\]
+			<div class = "math-scroll">
+				\[
+					X(\tau, \sigma) = x + \ell_\text{s}^2 p \tau + i \ell_\text{s} \sum_{n \neq 0} \frac{1}{2 n} \left[a_n e^{-2 i n (\tau + \sigma)} + b_n e^{-2 i n (\tau - \sigma)}\right],
+				\]
+			</div>
 			where \(x\), \(p\), \(a_n\), and \(b_n\) are arbitrary constants. In the following, we will demonstrate how this solution is obtained.
 
 			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "text-section"> Step-by-Step Derivation</p>
