@@ -216,12 +216,14 @@
 		
 		<footer-component></footer-component>
 		<script>
-			document.addEventListener("DOMContentLoaded", () => {
+			MathJax.typesetPromise().then(() => {
 				document.querySelectorAll(".MathJax_Display").forEach(el => {
-					const wrapper = document.createElement("div");
-					wrapper.className = "math-scroll";
-					el.parentNode.insertBefore(wrapper, el);
-					wrapper.appendChild(el);
+					if (!el.parentElement.classList.contains("math-scroll")) {
+						const wrapper = document.createElement("div");
+						wrapper.className = "math-scroll";
+						el.parentNode.insertBefore(wrapper, el);
+						wrapper.appendChild(el);
+					}
 				});
 			});
 		</script>
