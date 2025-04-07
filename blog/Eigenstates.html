@@ -12,6 +12,14 @@
 			.mjx-container {
 				font-size: 1.5rem;
 			}
+
+			.math-scroll {
+				overflow-x: auto;
+				overflow-y: hidden;
+				max-width: 100%;
+				padding: 0.5rem 0;
+			}
+
 			@media (max-width: 1380px) {
 				.mjx-container {
 					font-size: 1rem;
@@ -55,34 +63,44 @@
 			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "text-section">Eigenvalues</p>
 
 				Let \(M\) be an \(n \times n\) matrix. A scalar \(m\) is called an eigenvalues of \(M\) if there exists a nonzero column vector \(v\) such that
-				\begin{align}
-					M v = m v. \label{EigenvalueEq}
-				\end{align}
+				<div class = "math-scroll">
+					\begin{equation}
+						M v = m v. \label{EigenvalueEq}
+					\end{equation}
+				</div>
 				
 				To obtain a nonzero solution to Eq. (\ref{EigenvalueEq}), the possible choice sof \(m\) are limited. To see this, we rearrange Eq. (\ref{EigenvalueEq}) as
-				\[
-					\mathbf{0} = M v - m v = (M - m \mathbb{1}) v,
-				\]
+				<div class = "math-scroll">
+					\begin{equation*}
+						\mathbf{0} = M v - m v = (M - m \mathbb{1}) v,
+					\end{equation*}
+				</div>
 				where \(\mathbf{0}\) is a column vector with all entries equal to zero. If \((M - m \mathbb{1})\) is invertible, then
-				\begin{align*}
-					& v = (M - m \mathbb{1})^{-1} \mathbf{0}\\
-					\Rightarrow \quad & v = \mathbf{0}.
-				\end{align*}
+				<div class = "math-scroll">
+					\begin{align*}
+						& v = (M - m \mathbb{1})^{-1} \mathbf{0}\\
+						\Rightarrow \quad & v = \mathbf{0}.
+					\end{align*}
+				</div>
 				In other words, \(v\) must be a zero vector unless the inverse of \((M - m \mathbb{1})\) does not exist. Therefore, the allowed values of \(m\) are those that satisfy
-				\begin{align}
-					\det (M - m \mathbb{1}) = 0. \label{DetEq}
-				\end{align}
+				<div class = "math-scroll">
+					\begin{equation}
+						\det (M - m \mathbb{1}) = 0. \label{DetEq}
+					\end{equation}
+				</div>
 				
 				Since Eq. (\ref{DetEq}) is a polynomial of degree \(n\), it has \(n\) solutions. We can therefore label these solutions as \(m_1\), \(m_2\), \(\cdots\), \(m_n\).
 
 			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "text-section">"Eigenvectors"</p>
 
 				For a given eigenvalue there are corresponding solutions to Eq. (\ref{EigenvalueEq}). We, therefore, focus on the solutions a specific eigenvalue \(m_i\). To make the \(m_i\) dependence more explicit, we also label the vector to be determined by \(i\), namely,
-				\[
-					M v_i = m_i v_i.
-				\]
+				<div class = "math-scroll">
+					\begin{equation*}
+						M v_i = m_i v_i.
+					\end{equation*}
+				</div>
 
-				However, the solution to the is far from being unique. To be more specific, if \(v_i\) is a solution, \(\tilde{v}_i = \alpha v_i\), where \(\alpha\) is a nonzero constant, is also a solution.
+				However, the solution to the is far from being unique. As an example, if \(v_i\) is a solution, \(\tilde{v}_i = \alpha v_i\), where \(\alpha\) is a nonzero constant, is also a nonzero solution.
 
 		</div>
 		
