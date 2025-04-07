@@ -20,6 +20,16 @@
 				padding: 0.5rem 0;
 			}
 
+			.paragraph {
+				margin-bottom: 1rem;
+			}
+
+			.section {
+				position: relative;
+				line-height: 1.5;
+				text-decoration: underline;
+			}
+
 			@media (max-width: 1380px) {
 				.mjx-container {
 					font-size: 1rem;
@@ -32,7 +42,7 @@
 		<script src = "../footer-component.js" defer></script>
 		<script src = "../menu.js" defer></script>
 		<script src = "parent.js" defer></script>
-
+		
 		<script>
 			MathJax = {
 				tex: {
@@ -40,6 +50,7 @@
 				}
 			};
 		</script>
+
 		<script id = "MathJax-script" async src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 
@@ -58,52 +69,62 @@
 		
 		<div style = "position: relative; margin-left:5vw; max-width: 90vw; line-height: 1.2;" class = "text">
 			
-			Since you found this article, I presume you already know that eigenvalues and eigenvectors (or eigenstates) are essential in quantum mechanics. I also assume you know how to find the eigenvalues and their corresponding eigenstates. But you might not know (or may not have noticed) that there are actually two kinds of eigenvectors — left-eigenvectors and right-eigenvectors. In fact, you're probably already quite familiar with them, but you just didn't pay much attention. The main motivation for writing this post is simply to point them out for future reference.
+			<p class = "paragraph">
+				Since you found this article, I presume you already know that eigenvalues and eigenvectors (or eigenstates) are essential in quantum mechanics. I also assume you know how to find the eigenvalues and their corresponding eigenstates. But you might not know (or may not have noticed) that there are actually two kinds of eigenvectors — left-eigenvectors and right-eigenvectors. In fact, you're probably already quite familiar with them, but you just didn't pay much attention. The main motivation for writing this post is simply to point them out for future reference.
+			</p>
 
-			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "text-section">Eigenvalues</p>
+			<p class = "section text-section">Eigenvalues</p>
 
-				Let \(M\) be an \(n \times n\) matrix. A scalar \(m\) is called an eigenvalues of \(M\) if there exists a nonzero column vector \(v\) such that
-				<div class = "math-scroll">
-					\begin{equation}
-						M v = m v. \label{EigenvalueEq}
-					\end{equation}
-				</div>
+				<p class = "paragraph">
+					Let \(M\) be an \(n \times n\) matrix. A scalar \(m\) is called an eigenvalues of \(M\) if there exists a nonzero column vector \(v\) such that
+					<div class = "math-scroll">
+						\begin{equation}
+							M v = m v. \label{EigenvalueEq}
+						\end{equation}
+					</div>
+				</p>
 				
-				To obtain a nontrivial solution (i.e., not a zero vector) to Eq. (\ref{EigenvalueEq}), the possible choice sof \(m\) are limited. To see this, we rearrange Eq. (\ref{EigenvalueEq}) as
-				<div class = "math-scroll">
-					\begin{equation*}
-						\mathbf{0} = M v - m v = (M - m \mathbb{1}) v,
-					\end{equation*}
-				</div>
-				where \(\mathbf{0}\) is a column vector with all entries equal to zero. If \((M - m \mathbb{1})\) is invertible, then
-				<div class = "math-scroll">
-					\begin{align*}
-						& v = (M - m \mathbb{1})^{-1} \mathbf{0}\\
-						\Rightarrow \quad & v = \mathbf{0}.
-					\end{align*}
-				</div>
-				In other words, \(v\) must be a zero vector unless the inverse of \((M - m \mathbb{1})\) does not exist. Therefore, the allowed values of \(m\) are those that satisfy
-				<div class = "math-scroll">
-					\begin{equation}
-						\det (M - m \mathbb{1}) = 0. \label{DetEq}
-					\end{equation}
-				</div>
+				<p class = "paragraph">
+					To obtain a nontrivial solution (i.e., not a zero vector) to Eq. (\ref{EigenvalueEq}), the possible choice sof \(m\) are limited. To see this, we rearrange Eq. (\ref{EigenvalueEq}) as
+					<div class = "math-scroll">
+						\begin{equation*}
+							\mathbf{0} = M v - m v = (M - m \mathbb{1}) v,
+						\end{equation*}
+					</div>
+					where \(\mathbf{0}\) is a column vector with all entries equal to zero. If \((M - m \mathbb{1})\) is invertible, then
+					<div class = "math-scroll">
+						\begin{align*}
+							& v = (M - m \mathbb{1})^{-1} \mathbf{0}\\
+							\Rightarrow \quad & v = \mathbf{0}.
+						\end{align*}
+					</div>
+					In other words, \(v\) must be a zero vector unless the inverse of \((M - m \mathbb{1})\) does not exist. Therefore, the allowed values of \(m\) are those that satisfy
+					<div class = "math-scroll">
+						\begin{equation}
+							\det (M - m \mathbb{1}) = 0. \label{DetEq}
+						\end{equation}
+					</div>
+				</p>
 				
-				Since Eq. (\ref{DetEq}) is a polynomial of degree \(n\), it has \(n\) solutions. We can therefore label these solutions as \(m_1\), \(m_2\), \(\cdots\), \(m_n\).
+				<p class = "paragraph">
+					Since Eq. (\ref{DetEq}) is a polynomial of degree \(n\), it has \(n\) solutions. We can therefore label these solutions as \(m_1\), \(m_2\), \(\cdots\), \(m_n\).
+				</p>
 
-			<p style="position: relative; line-height: 1.5; text-decoration: underline;" class = "text-section">Eigenvectors</p>
+			<p class = "section text-section">Eigenvectors</p>
+				<p class = "paragraph">
+					For a given eigenvalue there are corresponding solutions to Eq. (\ref{EigenvalueEq}). We, therefore, focus on the solutions a specific eigenvalue \(m_i\). To make the \(m_i\) dependence more explicit, we also label the vector to be determined by \(i\), namely,
+					<div class = "math-scroll">
+						\begin{equation*}
+							M v_i = m_i v_i.
+						\end{equation*}
+					</div>
+					The nontrivial \(v_i\) that satisfies the equation is called an eigenvector with eigenvalue \(m_i\).
+				</p>
 
-				For a given eigenvalue there are corresponding solutions to Eq. (\ref{EigenvalueEq}). We, therefore, focus on the solutions a specific eigenvalue \(m_i\). To make the \(m_i\) dependence more explicit, we also label the vector to be determined by \(i\), namely,
-				<div class = "math-scroll">
-					\begin{equation*}
-						M v_i = m_i v_i.
-					\end{equation*}
-				</div>
-
-				However, the solution to the is far from being unique. As an example, if \(v_i\) is a solution, \(\tilde{v}_i = \alpha v_i\), where \(\alpha\) is a nonzero constant, is also a nonzero solution.
-
+				<p class = "paragraph">
+					However, the solution to the is far from being unique. As an example, if \(v_i\) is a solution, \(\tilde{v}_i = \alpha v_i\), where \(\alpha\) is a nonzero constant, is also a nonzero solution.
+				</p>
 		</div>
-		
 		<footer-component></footer-component>
 	</body>
 </html>
