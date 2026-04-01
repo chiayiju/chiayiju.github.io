@@ -112,6 +112,16 @@
 			</div>
 		</div>
 
+		<div style = "position: relative; margin-top: 3rem; text-align: right;">Last updated on: <span id="update-date"></span></div>
+		<script>
+			const lastMod = new Date(document.lastModified);
+			  
+			const options = { year: 'numeric', month: 'long', day: 'numeric' };
+			const cleanDate = lastMod.toLocaleDateString(undefined, options);
+
+			document.getElementById('update-date').textContent = cleanDate;
+		</script>
+
 		<footer-component></footer-component>
 	</body>
 </html>
