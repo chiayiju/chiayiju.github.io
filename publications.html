@@ -20,22 +20,36 @@
 		
 		<p style = "text-align: center; font-weight:bold;" class = "text-title"> Publications </p>
 
+		<div style = "text-align: center; margin-bottom: 2rem;" class = "text">
+			<label for = "publication-filter" style = "font-weight: bold; margin-right: 0.5rem;">View Publications:</label>
+			<select id = "publication-filter" style = "padding: 0.3rem 0.6rem; border-radius: 4px;">
+				<option value = "all">All Publications</option>
+				<option value = "selected">⭐ Selective / Key Papers</option>
+				
+				<optgroup label = "Group Members & Alumni">
+					<option value = "Jen-Yin Yeh">Jen-Yin Yeh</option>
+					<option value = "Wei-Ming Chen">Wei-Ming Chen</option>
+					<option value = "Yen-Ting Lin">Yen-Ting Lin</option>
+				</optgroup>
+			</select>
+		</div>
+
 		<div class = "enumerated-container text" style = "position: relative; margin-left: 3%; text-align: left; max-width: 90%;">
-			<ol>
-				<li> <p style = "margin-left: 1%;">
+			<ol id = "publication-list">
+				<li data-selected = "true"> <p style = "margin-left: 1%;">
 					Chia-Yi Ju and Szu-Ming Chen <br />
 					"<i>Evidence for Exceptional Points as Topological Defects</i>" <br />
 					<a href = "https://doi.org/10.22331/q-2026-09-30-2220" target="_blank">Quantum <strong>10</strong>, 2220</a> (2026). <br />
 					[<a href = "https://arxiv.org/abs/2412.06548" target = "_blank">arXiv: 2412.06548</a>]
 				</p> </li>
 
-				<li> <p style = "margin-left: 1%;">
+				<li data-authors = "Jen-Yin Yeh"> <p style = "margin-left: 1%;">
 					Jen-Yin Yeh and Chia-Yi Ju <br />
 					"<i>Evolution Generators for Complex Parameters</i>" <br />
 					[<a href = "https://arxiv.org/abs/2608.29602" target = "_blank">arXiv: 2608.29602</a>]
 				</p> </li>
 
-				<li> <p style = "margin-left: 1%;">
+				<li data-authors = "Wei-Ming Chen"> <p style = "margin-left: 1%;">
 					Wei-Ming Chen and Chia-Yi Ju <br />
 					"<i>Non-Hermitian Rayleigh-Schrödinger-like Perturbation Theory at Exceptional Point</i>" <br />
 					[<a href = "http://arxiv.org/abs/2606.31279" target = "_blank">arXiv: 2606.31279</a>]
@@ -68,7 +82,7 @@
 					[<a href = "http://arxiv.org/abs/2503.03527" target = "_blank">arXiv: 2503.03527</a>]
 				</p> </li>
 
-				<li> <p style = "margin-left: 1%;">
+				<li data-authors = "Wei-Ming Chen, Yen-Ting Lin"> <p style = "margin-left: 1%;">
 					Wei-Ming Chen, Yen-Ting Lin, and Chia-Yi Ju <br />
 					"<i>Non-Hermitian Generalization of Rayleigh-Schrödinger Perturbation Theory</i>" <br />
 					<a href = "https://doi.org/10.1103/PhysRevA.111.022211" target="_blank">Phys. Rev. A <strong>111</strong>, 022211</a> (2025). <br />
@@ -80,14 +94,14 @@
 					Wan-Guan Chang, Chia-Yi Ju, Guang-Yin Chen, Yueh-Nan Chen, and Huan-Yu Ku <br />
 					"<i>Visually quantifying single-qubit quantum memory</i>" <br />
 					<a href = "https://doi.org/10.1103/PhysRevResearch.6.023035" target="_blank">Phys. Rev. Res. <strong>6</strong>, 023035</a> (2024). <br />
-					[<a href = "https://arxiv.org/abs/2312.06939" target="_blank">arXiv: 2312.06939</a>]
+					[<a href = "https://arxiv.org/abs/2312.06939" target = "_blank">arXiv: 2312.06939</a>]
 				</p> </li>
 
-				<li> <p style = "margin-left: 1%;">
+				<li data-selected = "true"> <p style = "margin-left: 1%;">
 					Chia-Yi Ju, Adam Miranowicz, Yueh-Nan Chen, Guang-Yin Chen, and Franco Nori <br />
 					"<i>Emergent Parallel Transports and Curvatures in Non-Hermitian Quantum Mechanics</i>" <br />
 					<a href = "https://doi.org/10.22331/q-2024-03-13-1277" target="_blank">Quantum <strong>8</strong>, 1277</a> (2024). <br />
-					[<a href = "https://arxiv.org/abs/2204.05657" target="_blank">arXiv: 2204.05657</a>]
+					[<a href = "https://arxiv.org/abs/2204.05657" target = "_blank">arXiv: 2204.05657</a>]
 				</p> </li>
 
 				<li> <p style = "margin-left: 1%;">
@@ -99,21 +113,21 @@
 					Chia-Yi Ju, Adam Miranowicz, Fabrizio Minganti, Chuan-Tsung Chan, Guang-Yin Chen, and Franco Nori <br />
 					"<i>Einstein's Quantum Elevator: Hermitization of Non-Hermitian Hamiltonians via a Generalized Vielbein Formalism</i>" <br />
 					<a href = "https://doi.org/10.1103/PhysRevResearch.4.023070" target="_blank">Phys. Rev. Res. <strong>4</strong>, 023070</a> (2022). <br />
-					[<a href = "https://arxiv.org/abs/2107.11910" target="_blank">arXiv: 2107.11910</a>]
+					[<a href = "https://arxiv.org/abs/2107.11910" target = "_blank">arXiv: 2107.11910</a>]
 				</p> </li>
 
 				<li> <p style = "margin-left: 1%;">
 					Yu-Chin Tzeng, Chia-Yi Ju, Guang-Yin Chen, and Wen-Min Huang <br />
 					"<i>Hunting for the non-Hermitian exceptional points with fidelity susceptibility</i>" <br />
 					<a href = "https://doi.org/10.1103/PhysRevResearch.3.013015" target="_blank">Phy. Rev. Res. <strong>3</strong>, 013015</a> (2021). <br />
-					[<a href = "https://arxiv.org/abs/2009.07070" target="_blank">arXiv: 2009.07070</a>]
+					[<a href = "https://arxiv.org/abs/2009.07070" target = "_blank">arXiv: 2009.07070</a>]
 				</p> </li>
 
 				<li> <p style = "margin-left: 1%;">
 					Dharmesh Jain, Chia-Yi Ju, and Warren Siegel <br />
 					"<i>Simplifying 4d N = 3 Harmonic Superspace</i>" <br />
 					<a href = "https://doi.org/10.1103/PhysRevD.102.066007" target="_blank">Phys. Rev. D <strong>102</strong>, 066007</a> (2020). <br />
-					[<a href = "https://arxiv.org/abs/2007.13777" target="_blank">arXiv: 2007.13777</a>]
+					[<a href = "https://arxiv.org/abs/2007.13777" target = "_blank">arXiv: 2007.13777</a>]
 				</p> </li>
 
 				<li> <p style = "margin-left: 1%;">
@@ -122,25 +136,25 @@
 					<a href = "https://doi.org/10.1364/OE.395140" target="_blank">Opt Express <strong>28</strong>, 17868</a> (2020).
 				</p> </li>
 
-				<li> <p style = "margin-left: 1%;">
+				<li data-selected = "true"> <p style = "margin-left: 1%;">
 					Chia-Yi Ju, Adam Miranowicz, Guang-Yin Chen, and Franco Nori <br />
 					"<i>Non-Hermitian Hamiltonians and no-go theorems in quantum information</i>" <br />
 					<a href = "https://doi.org/10.1103/PhysRevA.100.062118" target="_blank">Phys. Rev. A <strong>100</strong>, 062118</a> (2019). <br />
-					[<a href = "https://arxiv.org/abs/1906.08071" target="_blank">arXiv: 1906.08071</a>]
+					[<a href = "https://arxiv.org/abs/1906.08071" target = "_blank">arXiv: 1906.08071</a>]
 				</p> </li>
 
-				<li> <p style = "margin-left: 1%;">
+				<li data-selected = "true"> <p style = "margin-left: 1%;">
 					Chia-Yi Ju and Warren Siegel <br />
 					"<i>Gauging Unbroken Symmetries in F-theory</i>" <br />
 					<a href = "https://doi.org/10.1103/PhysRevD.94.106004" target="_blank">Phys. Rev. D <strong>94</strong>, 106004</a> (2016). <br />
-					[<a href = "https://arxiv.org/abs/1607.03017" target="_blank">arXiv: 1607.03017</a>]
+					[<a href = "https://arxiv.org/abs/1607.03017" target = "_blank">arXiv: 1607.03017</a>]
 				</p> </li>
 
 				<li> <p style = "margin-left: 1%;">
 					Chia-Yi Ju and Warren Siegel <br />
 					"<i>Systematizing semishortening conditions</i>" <br />
 					<a href = "https://doi.org/10.1103/PhysRevD.90.125004" target="_blank">Phys. Rev. D <strong>90</strong>, 125004</a> (2014). <br />
-					[<a href = "https://arxiv.org/abs/1302.2515" target="_blank">arXiv: 1302.2515</a>]
+					[<a href = "https://arxiv.org/abs/1302.2515" target = "_blank">arXiv: 1302.2515</a>]
 				</p> </li>
 
 				<li> <p style = "margin-left: 1%;">
@@ -157,8 +171,33 @@
 			</ol>
 		</div>
 		
-		<div style = "position: relative; margin-top: 3rem; text-align: right;">Last updated on: September 7, 2026 </div>
+		<div style = "position: relative; margin-top: 3rem; text-align: right;">Last updated on: October 7, 2026 </div>
 
 		<footer-component></footer-component>
+
+		<script>
+			document.getElementById('publication-filter').addEventListener('change', function () {
+				const filterValue = this.value;
+				const items = document.querySelectorAll('#publication-list li');
+
+				items.forEach(item => {
+					const authors = item.getAttribute('data-authors') || '';
+					const isSelected = item.getAttribute('data-selected') === 'true';
+
+					if (filterValue === 'all') {
+						item.style.display = '';
+					} else if (filterValue === 'selected') {
+						item.style.display = isSelected ? '' : 'none';
+					} else {
+						// Filter by member name
+						if (authors.includes(filterValue)) {
+							item.style.display = '';
+						} else {
+							item.style.display = 'none';
+						}
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
